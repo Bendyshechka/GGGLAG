@@ -32,7 +32,9 @@ Tab:AddButton({
 			disableParticlesIn(game.SoundService)
 
 			-- Выполняем взрыв серверного события
-			game:GetService("ReplicatedStorage").slapstick:FireServer("runeffect")
+			OldSpeed = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed
+game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+game:GetService("ReplicatedStorage").slapstick:FireServer("runeffect")
 
 			-- Ожидание с минимальным временем для предотвращения зависания
 			wait(0.01)
