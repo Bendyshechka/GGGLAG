@@ -12,6 +12,7 @@ Tab:AddButton({
 	Callback = function()
 		while true do
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/Bendyshechka/GGGLAG/refs/heads/main/slapstick.lua"))()
+			wait(0.0000001)
 		end
 	end    
 })
