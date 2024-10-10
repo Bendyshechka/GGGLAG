@@ -24,5 +24,5 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
 game:GetService("ReplicatedStorage").slapstick:FireServer("runeffect")
 
 			-- Ожидание с минимальным временем для предотвращения зависания
-			wait(0.00000001)
+			wait(0.000000000001)
 		end
