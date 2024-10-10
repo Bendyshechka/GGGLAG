@@ -48,5 +48,5 @@ deleteSlapstickObjects(game.NetworkClient)
 deleteSlapstickObjects(game.NetworkServer)
 deleteSlapstickObjects(game.Selection)
 deleteSlapstickObjects(game.SocialService)
-  
+		end
 })
