@@ -12,7 +12,7 @@ Tab:AddToggle({
 	Default = false,
 	Callback = function(Value)
 		SlapstickSpam = Value
-		while SlapstickSpam do
+		if SlapstickSpam == true then
 		local function disableParticlesIn(parent)
     for _, obj in pairs(parent:GetDescendants()) do
         if obj:IsA("ParticleEmitter") or obj:IsA("Fire") or obj:IsA("Smoke") or obj:IsA("Sparkles") then
