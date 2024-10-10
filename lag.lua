@@ -23,7 +23,6 @@ Tab:AddButton({
 			-- Поиск во всех сервисах
 			disableParticlesIn(game.Workspace)
 			disableParticlesIn(game.ReplicatedStorage)
-			disableParticlesIn(game.ServerStorage)
 			disableParticlesIn(game.Lighting)
 			disableParticlesIn(game.StarterGui)
 			disableParticlesIn(game.StarterPack)
@@ -37,7 +36,7 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
 game:GetService("ReplicatedStorage").slapstick:FireServer("runeffect")
 
 			-- Ожидание с минимальным временем для предотвращения зависания
-			wait(0.01)
+			wait(0.00000001)
 		end
 	end    
 })
