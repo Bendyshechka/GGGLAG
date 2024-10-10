@@ -8,7 +8,7 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddButton({
-	Name = "Включить антилаг🤞",
+	Name = "Включить антилаг🤫🧏‍♂️",
 	Callback = function()
       		local function deleteSlapstickObjects(parent)
     for _, obj in pairs(parent:GetDescendants()) do
@@ -48,5 +48,6 @@ deleteSlapstickObjects(game.NetworkClient)
 deleteSlapstickObjects(game.NetworkServer)
 deleteSlapstickObjects(game.Selection)
 deleteSlapstickObjects(game.SocialService)
-		end
+
+  	end    
 })
