@@ -32,14 +32,28 @@ Tab1:AddButton({
   	end    
 })
 
-Tab2:AddButton({
-	Name = "Spam Ability Slapstick",
-	Callback = function()
-		while true do
-    game:GetService("ReplicatedStorage").slapstick:FireServer("runeffect")
-    wait(0.001) -- Задержка в 1 секунду, чтобы не перегружать сервер
+Tab2:AddDropdown({
+	Name = "Slapstick Ability",
+	Default = "runeffect",
+	Options = {"runeffect", "fullcharged", "dash", "addarm","charge","cancelrun","discharge"},
+	Callback = function(Value)
+SlapstickAbility = Value
+	end    
+})
+
+Tab2:AddToggle({
+	Name = "Auto Spam Slapstick [ All Glove ]",
+	Default = false,
+	Callback = function(Value)
+SlapstickSpam = Value
+if SlapstickSpam == true then
+game:GetService("ReplicatedStorage").slapstick:FireServer("addarm")
 end
-  	end    
+while SlapstickSpam do
+game:GetService("ReplicatedStorage").slapstick:FireServer(SlapstickAbility)
+task.wait()
+end
+	end    
 })
 
 Tab3:AddButton({
