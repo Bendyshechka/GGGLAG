@@ -34,18 +34,3 @@ Tab2:AddDropdown({
 SlapstickAbility = Value
 	end    
 })
-
-Tab2:AddToggle({
-	Name = "Auto Spam Slapstick [ All Glove ]",
-	Default = false,
-	Callback = function(Value)
-SlapstickSpam = Value
-if SlapstickSpam == true then
-game:GetService("ReplicatedStorage").slapstick:FireServer("addarm")
-end
-while SlapstickSpam do
-game:GetService("ReplicatedStorage").slapstick:FireServer(SlapstickAbility)
-task.wait()
-end
-	end    
-})
