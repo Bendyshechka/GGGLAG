@@ -25,6 +25,12 @@ local Tab3 = Window:MakeTab({
 	PremiumOnly = false
 })
 
+local Tab4 = Window:MakeTab({
+	Name = "Атака сервера",
+	Icon = "rbxassetid://7734053426",
+	PremiumOnly = false
+})
+
 Tab1:AddButton({
 	Name = "Флай💩",
 	Callback = function()
@@ -225,5 +231,45 @@ while GloveSoundSpam and GloveSound == "Scythe" do
 game:GetService("ReplicatedStorage").Scythe:FireServer("ScytheWeapon")
 task.wait()
 end
+	end    
+})
+
+Tab4:AddToggle({
+	Name = "КОМБО💀",
+	Default = false,
+	Callback = function(Value)
+		Enabled = Value
+while GloveSoundSpam do
+local players = game.Players
+
+for _, player in ipairs(players:GetPlayers()) do
+        local character = workspace:FindFirstChild(player.Name)
+        if character then
+            local rightArm = character:FindFirstChild("Right Arm")
+            if rightArm then
+                rightArm:Destroy()  -- Удаляем объект "Right Arm" только на клиенте
+            end
+        end
+end
+
+game:GetService("ReplicatedStorage").Scythe:FireServer("ScytheWeapon")
+
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+
+-- Ждём, пока персонаж полностью загрузится
+character:WaitForChild("Humanoid")
+
+-- Проходим по всем потомкам персонажа
+for _, obj in ipairs(character:GetDescendants()) do
+    if obj.Name == "runblur" then
+        obj:Destroy()  -- Удаляем все объекты с названием "runblur"
+    end
+end
+
+game:GetService("ReplicatedStorage").slapstick:FireServer(Slapstick111)
+task.wait()
+end
+			end
 	end    
 })
