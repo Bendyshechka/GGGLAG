@@ -232,4 +232,5 @@ game:GetService("ReplicatedStorage").Scythe:FireServer("ScytheWeapon")
 task.wait()
 end
 	end    
+	})
 })
