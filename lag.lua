@@ -16,24 +16,3 @@ Tab:AddButton({
 		end
 	end    
 })
-
-Tab11:AddDropdown({
-	Name = "Не трогать!",
-	Default = "Scythe",
-	Options = {"Scythe"},
-	Callback = function(Value)
-GloveSound = Value
-	end    
-})
-
-Tab11:AddToggle({
-	Name = "Взрыв сервера с косой!",
-	Default = false,
-	Callback = function(Value)
-		GloveSoundSpam = Value
-while GloveSoundSpam and GloveSound == "Scythe" do
-game:GetService("ReplicatedStorage").Scythe:FireServer("ScytheWeapon")
-task.wait()
-end
-	end    
-})
