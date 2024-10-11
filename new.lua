@@ -32,25 +32,35 @@ Tab1:AddButton({
   	end    
 })
 
-Tab2:AddDropdown({
-	Name = "Slapstick Ability",
+Tab3:AddDropdown({
+	Name = "Не трогать!",
 	Default = "runeffect",
-	Options = {"runeffect", "fullcharged", "dash", "addarm","charge","cancelrun","discharge"},
+	Options = {"runeffect"},
 	Callback = function(Value)
-SlapstickAbility = Value
+Slapstick111 = Value
 	end    
 })
 
 Tab2:AddToggle({
-	Name = "Auto Spam Slapstick [ All Glove ]",
+	Name = "Взрыв сервера со слапстик!😈",
 	Default = false,
 	Callback = function(Value)
-SlapstickSpam = Value
-if SlapstickSpam == true then
-game:GetService("ReplicatedStorage").slapstick:FireServer("addarm")
+		GloveSoundSpam = Value
+while GloveSoundSpam and Slapstick111 == "runeffect" do
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+
+-- Ждём, пока персонаж полностью загрузится
+character:WaitForChild("Humanoid")
+
+-- Проходим по всем потомкам персонажа
+for _, obj in ipairs(character:GetDescendants()) do
+    if obj.Name == "runblur" then
+        obj:Destroy()  -- Удаляем все объекты с названием "runblur"
+    end
 end
-while SlapstickSpam do
-game:GetService("ReplicatedStorage").slapstick:FireServer(SlapstickAbility)
+
+game:GetService("ReplicatedStorage").slapstick:FireServer(Slapstick111)
 task.wait()
 end
 	end    
