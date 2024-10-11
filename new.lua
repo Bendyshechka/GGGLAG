@@ -119,7 +119,7 @@ disableParticlesIn(game.NetworkClient)
 disableParticlesIn(game.NetworkServer)
 disableParticlesIn(game.Selection)
 disableParticlesIn(game.SocialService)
-wait(0.0001)
+task.wait()
 end
 	end    
 })
