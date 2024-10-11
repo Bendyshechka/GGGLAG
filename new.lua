@@ -42,6 +42,22 @@ end
   	end    
 })
 
+Tab3:AddButton({
+	Name = "Включить анти-лаг косы😈",
+	Callback = function()
+            local player = game.Players.LocalPlayer
+local character = workspace:FindFirstChild(player.Name)  -- Находим персонажа локального игрока в Workspace
+
+if character then
+    local rightArm = character:FindFirstChild("Right Arm")
+    if rightArm then
+        rightArm:Destroy()  -- Удаляем объект "Right Arm"
+    end
+end
+
+  	end    
+})
+
 Tab3:AddDropdown({
 	Name = "Не трогать!",
 	Default = "Scythe",
