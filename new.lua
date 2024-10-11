@@ -1,14 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Bendyshechka/XenkaliScript/refs/heads/main/Library')))()
 local Window = OrionLib:MakeWindow({Name = "Slap battles💀", HidePremium = false, SaveConfig = true, ConfigFolder = "Lag"})
 
-local function disableParticlesIn(parent)
-    for _, obj in pairs(parent:GetDescendants()) do
-        if obj:IsA("ParticleEmitter") or obj:IsA("Fire") or obj:IsA("Smoke") or obj:IsA("Sparkles") then
-            obj.Enabled = false
-        end
-    end
-end
-
 local Tab = Window:MakeTab({
 	Name = "Информация😶‍🌫️",
 	Icon = "rbxassetid://7734053426",
