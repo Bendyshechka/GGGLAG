@@ -44,5 +44,6 @@ if SlapstickSpam == true then
 game:GetService("ReplicatedStorage").slapstick:FireServer("addarm")
 while SlapstickSpam do
 game:GetService("ReplicatedStorage").slapstick:FireServer(SlapstickAbility)
+task.wait()
 	end    
 })
