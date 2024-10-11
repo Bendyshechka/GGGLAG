@@ -29,7 +29,7 @@ Tab1:AddButton({
 Tab2:AddDropdown({
 	Name = "Slapstick Ability",
 	Default = "runeffect",
-	Options = {"runeffect", "fullcharged", "cancelrun"},
+	Options = {"runeffect","cancelrun"},
 	Callback = function(Value)
 SlapstickAbility = Value
 	end    
