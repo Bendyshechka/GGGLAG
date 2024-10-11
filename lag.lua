@@ -8,7 +8,7 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddButton({
-	Name = "Взрыв сервера🤫🧏‍♂️",
+	Name = "Взрыв сервера со слапстиком",
 	Callback = function()
 		while true do
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/Bendyshechka/GGGLAG/refs/heads/main/slapstick.lua"))()
@@ -17,3 +17,23 @@ Tab:AddButton({
 	end    
 })
 
+Tab11:AddDropdown({
+	Name = "Glove Sound",
+	Default = "Scythe",
+	Options = {"Scythe"},
+	Callback = function(Value)
+GloveSound = Value
+	end    
+})
+
+Tab11:AddToggle({
+	Name = "Auto Spam Glove Sound",
+	Default = false,
+	Callback = function(Value)
+		GloveSoundSpam = Value
+while GloveSoundSpam and GloveSound == "Scythe" do
+game:GetService("ReplicatedStorage").Scythe:FireServer("ScytheWeapon")
+task.wait()
+end
+	end    
+})
