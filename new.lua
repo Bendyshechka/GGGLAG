@@ -40,7 +40,7 @@ Tab2:AddToggle({
 	Default = false,
 	Callback = function(Value)
 SlapstickSpam = Value
-while SlapstickSpam do
+while true do
 OldSpeed = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed
 game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
 game:GetService("ReplicatedStorage").slapstick:FireServer("runeffect")
@@ -48,5 +48,6 @@ wait(5)
 game:GetService("ReplicatedStorage").slapstick:FireServer("fullcharged")
 wait(1)
 wait(0.001)
+			end
 	end    
 })
