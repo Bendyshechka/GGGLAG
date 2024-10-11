@@ -25,12 +25,6 @@ local Tab3 = Window:MakeTab({
 	PremiumOnly = false
 })
 
-local Tab4 = Window:MakeTab({
-	Name = "Атака сервера",
-	Icon = "rbxassetid://7734053426",
-	PremiumOnly = false
-})
-
 Tab1:AddButton({
 	Name = "Флай💩",
 	Callback = function()
@@ -232,4 +226,4 @@ game:GetService("ReplicatedStorage").Scythe:FireServer("ScytheWeapon")
 task.wait()
 end
 	end    
-	})
+})
