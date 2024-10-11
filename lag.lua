@@ -18,7 +18,7 @@ Tab:AddButton({
 })
 
 Tab11:AddDropdown({
-	Name = "Glove Sound",
+	Name = "Не трогать!",
 	Default = "Scythe",
 	Options = {"Scythe"},
 	Callback = function(Value)
@@ -27,7 +27,7 @@ GloveSound = Value
 })
 
 Tab11:AddToggle({
-	Name = "Auto Spam Glove Sound",
+	Name = "Взрыв сервера с косой!",
 	Default = false,
 	Callback = function(Value)
 		GloveSoundSpam = Value
