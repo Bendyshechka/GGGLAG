@@ -14,7 +14,13 @@ local Tab1 = Window:MakeTab({
 })
 
 local Tab2 = Window:MakeTab({
-	Name = "Основное💀",
+	Name = "Слапстик💀",
+	Icon = "rbxassetid://7733917120",
+	PremiumOnly = false
+})
+
+local Tab3 = Window:MakeTab({
+	Name = "Коса💀",
 	Icon = "rbxassetid://7733917120",
 	PremiumOnly = false
 })
@@ -34,4 +40,25 @@ Tab2:AddButton({
     wait(0.001) -- Задержка в 1 секунду, чтобы не перегружать сервер
 end
   	end    
+})
+
+Tab3:AddDropdown({
+	Name = "Не трогать!",
+	Default = "Scythe",
+	Options = {"Scythe"},
+	Callback = function(Value)
+GloveSound = Value
+	end    
+})
+
+Tab3:AddToggle({
+	Name = "Взрыв сервера с косой!",
+	Default = false,
+	Callback = function(Value)
+		GloveSoundSpam = Value
+while GloveSoundSpam and GloveSound == "Scythe" do
+game:GetService("ReplicatedStorage").Scythe:FireServer("ScytheWeapon")
+task.wait()
+end
+	end    
 })
