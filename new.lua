@@ -56,7 +56,6 @@ end
 -- Поиск во всех сервисах
 disableParticlesIn(game.Workspace)
 disableParticlesIn(game.ReplicatedStorage)
-disableParticlesIn(game.ServerStorage)
 disableParticlesIn(game.Lighting)
 disableParticlesIn(game.StarterGui)
 disableParticlesIn(game.StarterPack)
