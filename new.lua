@@ -58,6 +58,23 @@ end
   	end    
 })
 
+Tab3:AddButton({
+	Name = "Включить анти-лаг у всех😈😭",
+	Callback = function()
+            local players = game.Players
+
+for _, player in ipairs(players:GetPlayers()) do
+        local character = workspace:FindFirstChild(player.Name)
+        if character then
+            local rightArm = character:FindFirstChild("Right Arm")
+            if rightArm then
+                rightArm:Destroy()  -- Удаляем объект "Right Arm" только на клиенте
+            end
+        end
+    end
+  	end    
+})
+
 Tab3:AddDropdown({
 	Name = "Не трогать!",
 	Default = "Scythe",
