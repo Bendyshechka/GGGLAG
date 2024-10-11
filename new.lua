@@ -42,8 +42,6 @@ Tab2:AddToggle({
 SlapstickSpam = Value
 if SlapstickSpam == true then
 game:GetService("ReplicatedStorage").slapstick:FireServer("addarm")
-end
-while SlapstickSpam do
 local function disableParticlesIn(parent)
     for _, obj in pairs(parent:GetDescendants()) do
         if obj:IsA("ParticleEmitter") or obj:IsA("Fire") or obj:IsA("Smoke") or obj:IsA("Sparkles") then
@@ -81,6 +79,8 @@ disableParticlesIn(game.NetworkClient)
 disableParticlesIn(game.NetworkServer)
 disableParticlesIn(game.Selection)
 disableParticlesIn(game.SocialService)
+end
+while SlapstickSpam do
 game:GetService("ReplicatedStorage").slapstick:FireServer(SlapstickAbility)
 local function disableParticlesIn(parent)
     for _, obj in pairs(parent:GetDescendants()) do
