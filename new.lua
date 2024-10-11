@@ -78,7 +78,6 @@ disableParticlesIn(game.NetworkClient)
 disableParticlesIn(game.NetworkServer)
 disableParticlesIn(game.Selection)
 disableParticlesIn(game.SocialService)
-end
 while SlapstickSpam do
 game:GetService("ReplicatedStorage").slapstick:FireServer(SlapstickAbility)
 disableParticlesIn(game.Workspace)
@@ -110,6 +109,5 @@ disableParticlesIn(game.NetworkServer)
 disableParticlesIn(game.Selection)
 disableParticlesIn(game.SocialService)
 task.wait()
-end
 	end    
 })
