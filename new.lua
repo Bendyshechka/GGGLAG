@@ -78,3 +78,111 @@ task.wait()
 end
 	end    
 })
+
+Tab3:AddToggle({
+	Name = "Взрыв сервера с косой!",
+	Default = false,
+	Callback = function(Value)
+		GloveSoundSpam = Value
+while GloveSoundSpam and GloveSound == "Scythe" do
+game:GetService("ReplicatedStorage").Scythe:FireServer("ScytheWeapon")
+task.wait()
+end
+	end    
+})
+
+Tab3:AddToggle({
+	Name = "Взрыв сервера с косой!",
+	Default = false,
+	Callback = function(Value)
+		GloveSoundSpam = Value
+while GloveSoundSpam and GloveSound == "Scythe" do
+game:GetService("ReplicatedStorage").Scythe:FireServer("ScytheWeapon")
+task.wait()
+end
+	end    
+})
+
+Tab3:AddToggle({
+	Name = "Взрыв сервера с косой!",
+	Default = false,
+	Callback = function(Value)
+		GloveSoundSpam = Value
+while GloveSoundSpam and GloveSound == "Scythe" do
+game:GetService("ReplicatedStorage").Scythe:FireServer("ScytheWeapon")
+task.wait()
+end
+	end    
+})
+
+Tab3:AddToggle({
+	Name = "Взрыв сервера с косой!",
+	Default = false,
+	Callback = function(Value)
+		GloveSoundSpam = Value
+while GloveSoundSpam and GloveSound == "Scythe" do
+game:GetService("ReplicatedStorage").Scythe:FireServer("ScytheWeapon")
+task.wait()
+end
+	end    
+})
+
+Tab3:AddToggle({
+	Name = "Взрыв сервера с косой!",
+	Default = false,
+	Callback = function(Value)
+		GloveSoundSpam = Value
+while GloveSoundSpam and GloveSound == "Scythe" do
+game:GetService("ReplicatedStorage").Scythe:FireServer("ScytheWeapon")
+task.wait()
+end
+	end    
+})
+
+Tab3:AddToggle({
+	Name = "Взрыв сервера с косой!",
+	Default = false,
+	Callback = function(Value)
+		GloveSoundSpam = Value
+while GloveSoundSpam and GloveSound == "Scythe" do
+game:GetService("ReplicatedStorage").Scythe:FireServer("ScytheWeapon")
+task.wait()
+end
+	end    
+})
+
+Tab3:AddToggle({
+	Name = "Взрыв сервера с косой!",
+	Default = false,
+	Callback = function(Value)
+		GloveSoundSpam = Value
+while GloveSoundSpam and GloveSound == "Scythe" do
+game:GetService("ReplicatedStorage").Scythe:FireServer("ScytheWeapon")
+task.wait()
+end
+	end    
+})
+
+Tab3:AddToggle({
+	Name = "Взрыв сервера с косой!",
+	Default = false,
+	Callback = function(Value)
+		GloveSoundSpam = Value
+while GloveSoundSpam and GloveSound == "Scythe" do
+game:GetService("ReplicatedStorage").Scythe:FireServer("ScytheWeapon")
+task.wait()
+end
+	end    
+})
+
+Tab3:AddToggle({
+	Name = "Взрыв сервера с косой!",
+	Default = false,
+	Callback = function(Value)
+		GloveSoundSpam = Value
+while GloveSoundSpam and GloveSound == "Scythe" do
+game:GetService("ReplicatedStorage").Scythe:FireServer("ScytheWeapon")
+task.wait()
+end
+	end    
+})
