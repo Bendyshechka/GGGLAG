@@ -48,6 +48,6 @@ wait(5)
 game:GetService("ReplicatedStorage").slapstick:FireServer("fullcharged")
 wait(1)
 wait(0.001)
-			end
+end
 	end    
 })
