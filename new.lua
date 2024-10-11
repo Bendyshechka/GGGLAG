@@ -47,7 +47,7 @@ end
 while SlapstickSpam do
 game:GetService("ReplicatedStorage").slapstick:FireServer(SlapstickAbility)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Bendyshechka/GGGLAG/refs/heads/main/antilag.lua"))()
-task.wait()
+wait(0.0001)
 end
 	end    
 })
@@ -64,7 +64,7 @@ end
 while SlapstickSpam do
 game:GetService("ReplicatedStorage").slapstick:FireServer(SlapstickAbility)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Bendyshechka/GGGLAG/refs/heads/main/antilag.lua"))()
-task.wait()
+wait(0.0001)
 end
 	end    
 })
@@ -81,7 +81,7 @@ end
 while SlapstickSpam do
 game:GetService("ReplicatedStorage").slapstick:FireServer(SlapstickAbility)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Bendyshechka/GGGLAG/refs/heads/main/antilag.lua"))()
-task.wait()
+wait(0.0001)
 end
 	end    
 })
@@ -98,7 +98,7 @@ end
 while SlapstickSpam do
 game:GetService("ReplicatedStorage").slapstick:FireServer(SlapstickAbility)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Bendyshechka/GGGLAG/refs/heads/main/antilag.lua"))()
-task.wait()
+wait(0.0001)
 end
 	end    
 })
@@ -115,7 +115,7 @@ end
 while SlapstickSpam do
 game:GetService("ReplicatedStorage").slapstick:FireServer(SlapstickAbility)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Bendyshechka/GGGLAG/refs/heads/main/antilag.lua"))()
-task.wait()
+wait(0.0001)
 end
 	end    
 })
@@ -132,7 +132,75 @@ end
 while SlapstickSpam do
 game:GetService("ReplicatedStorage").slapstick:FireServer(SlapstickAbility)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Bendyshechka/GGGLAG/refs/heads/main/antilag.lua"))()
-task.wait()
+wait(0.0001)
+end
+	end    
+})
+
+Tab2:AddToggle({
+	Name = "Auto Spam Slapstick [ All Glove ]",
+	Default = false,
+	Callback = function(Value)
+SlapstickSpam = Value
+if SlapstickSpam == true then
+game:GetService("ReplicatedStorage").slapstick:FireServer("addarm")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Bendyshechka/GGGLAG/refs/heads/main/antilag.lua"))()
+end
+while SlapstickSpam do
+game:GetService("ReplicatedStorage").slapstick:FireServer(SlapstickAbility)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Bendyshechka/GGGLAG/refs/heads/main/antilag.lua"))()
+wait(0.0001)
+end
+	end    
+})
+
+Tab2:AddToggle({
+	Name = "Auto Spam Slapstick [ All Glove ]",
+	Default = false,
+	Callback = function(Value)
+SlapstickSpam = Value
+if SlapstickSpam == true then
+game:GetService("ReplicatedStorage").slapstick:FireServer("addarm")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Bendyshechka/GGGLAG/refs/heads/main/antilag.lua"))()
+end
+while SlapstickSpam do
+game:GetService("ReplicatedStorage").slapstick:FireServer(SlapstickAbility)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Bendyshechka/GGGLAG/refs/heads/main/antilag.lua"))()
+wait(0.0001)
+end
+	end    
+})
+
+Tab2:AddToggle({
+	Name = "Auto Spam Slapstick [ All Glove ]",
+	Default = false,
+	Callback = function(Value)
+SlapstickSpam = Value
+if SlapstickSpam == true then
+game:GetService("ReplicatedStorage").slapstick:FireServer("addarm")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Bendyshechka/GGGLAG/refs/heads/main/antilag.lua"))()
+end
+while SlapstickSpam do
+game:GetService("ReplicatedStorage").slapstick:FireServer(SlapstickAbility)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Bendyshechka/GGGLAG/refs/heads/main/antilag.lua"))()
+wait(0.0001)
+end
+	end    
+})
+
+Tab2:AddToggle({
+	Name = "Auto Spam Slapstick [ All Glove ]",
+	Default = false,
+	Callback = function(Value)
+SlapstickSpam = Value
+if SlapstickSpam == true then
+game:GetService("ReplicatedStorage").slapstick:FireServer("addarm")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Bendyshechka/GGGLAG/refs/heads/main/antilag.lua"))()
+end
+while SlapstickSpam do
+game:GetService("ReplicatedStorage").slapstick:FireServer(SlapstickAbility)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Bendyshechka/GGGLAG/refs/heads/main/antilag.lua"))()
+wait(0.0001)
 end
 	end    
 })
