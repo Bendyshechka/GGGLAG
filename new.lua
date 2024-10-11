@@ -26,7 +26,7 @@ Tab1:AddButton({
   	end    
 })
 
-Tab2:AddButton({
+Tab1:AddButton({
 	Name = "Spam Ability Slapstick",
 	Callback = function()
 OldSpeed = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed
