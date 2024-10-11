@@ -29,8 +29,9 @@ Tab1:AddButton({
 Tab2:AddButton({
 	Name = "Spam Ability Slapstick",
 	Callback = function()
-		OldSpeed = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed
-		game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
-		game:GetService("ReplicatedStorage").slapstick:FireServer("runeffect")
+		while true do
+    game:GetService("ReplicatedStorage").slapstick:FireServer("runeffect")
+    wait(0.001) -- Задержка в 1 секунду, чтобы не перегружать сервер
+end
   	end    
 })
