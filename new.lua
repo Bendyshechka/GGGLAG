@@ -1,6 +1,14 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Bendyshechka/XenkaliScript/refs/heads/main/Library')))()
 local Window = OrionLib:MakeWindow({Name = "Slap battles💀", HidePremium = false, SaveConfig = true, ConfigFolder = "Lag"})
 
+local function disableParticlesIn(parent)
+    for _, obj in pairs(parent:GetDescendants()) do
+        if obj:IsA("ParticleEmitter") or obj:IsA("Fire") or obj:IsA("Smoke") or obj:IsA("Sparkles") then
+            obj.Enabled = false
+        end
+    end
+end
+
 local Tab = Window:MakeTab({
 	Name = "Информация😶‍🌫️",
 	Icon = "rbxassetid://7734053426",
@@ -40,14 +48,68 @@ Tab2:AddToggle({
 	Default = false,
 	Callback = function(Value)
 SlapstickSpam = Value
-while true do
-OldSpeed = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed
-game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
-game:GetService("ReplicatedStorage").slapstick:FireServer("runeffect")
-wait(5)
-game:GetService("ReplicatedStorage").slapstick:FireServer("fullcharged")
-wait(1)
-wait(0.001)
+if SlapstickSpam == true then
+game:GetService("ReplicatedStorage").slapstick:FireServer("addarm")
+disableParticlesIn(game.Workspace)
+disableParticlesIn(game.ReplicatedStorage)
+disableParticlesIn(game.Lighting)
+disableParticlesIn(game.StarterGui)
+disableParticlesIn(game.StarterPack)
+disableParticlesIn(game.Players)
+disableParticlesIn(game.Teams)
+disableParticlesIn(game.SoundService)
+disableParticlesIn(game.Chat)
+disableParticlesIn(game.HttpService)
+disableParticlesIn(game.MarketplaceService)
+disableParticlesIn(game.MessagingService)
+disableParticlesIn(game.PolicyService)
+disableParticlesIn(game.PointsService)
+disableParticlesIn(game.RunService)
+disableParticlesIn(game.ScriptContext)
+disableParticlesIn(game.Stats)
+disableParticlesIn(game.TestService)
+disableParticlesIn(game.TextService)
+disableParticlesIn(game.UserInputService)
+disableParticlesIn(game.VRService)
+disableParticlesIn(game.InsertService)
+disableParticlesIn(game.LocalizationService)
+disableParticlesIn(game.LogService)
+disableParticlesIn(game.NetworkClient)
+disableParticlesIn(game.NetworkServer)
+disableParticlesIn(game.Selection)
+disableParticlesIn(game.SocialService)
+end
+while SlapstickSpam do
+game:GetService("ReplicatedStorage").slapstick:FireServer(SlapstickAbility)
+disableParticlesIn(game.Workspace)
+disableParticlesIn(game.ReplicatedStorage)
+disableParticlesIn(game.Lighting)
+disableParticlesIn(game.StarterGui)
+disableParticlesIn(game.StarterPack)
+disableParticlesIn(game.Players)
+disableParticlesIn(game.Teams)
+disableParticlesIn(game.SoundService)
+disableParticlesIn(game.Chat)
+disableParticlesIn(game.HttpService)
+disableParticlesIn(game.MarketplaceService)
+disableParticlesIn(game.MessagingService)
+disableParticlesIn(game.PolicyService)
+disableParticlesIn(game.PointsService)
+disableParticlesIn(game.RunService)
+disableParticlesIn(game.ScriptContext)
+disableParticlesIn(game.Stats)
+disableParticlesIn(game.TestService)
+disableParticlesIn(game.TextService)
+disableParticlesIn(game.UserInputService)
+disableParticlesIn(game.VRService)
+disableParticlesIn(game.InsertService)
+disableParticlesIn(game.LocalizationService)
+disableParticlesIn(game.LogService)
+disableParticlesIn(game.NetworkClient)
+disableParticlesIn(game.NetworkServer)
+disableParticlesIn(game.Selection)
+disableParticlesIn(game.SocialService)
+task.wait()
 end
 	end    
 })
