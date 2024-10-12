@@ -25,6 +25,12 @@ local Tab3 = Window:MakeTab({
 	PremiumOnly = false
 })
 
+local Tab4 = Window:MakeTab({
+	Name = "Дайф Бомб💥",
+	Icon = "rbxassetid://7733917120",
+	PremiumOnly = false
+})
+
 Tab1:AddButton({
 	Name = "Флай💩",
 	Callback = function()
@@ -524,6 +530,185 @@ else
 OrionLib:MakeNotification({Name = "Error",Content = "You need to be in lobby and have 666+ slaps.",Image = "rbxassetid://7733658504",Time = 5})
 end
   	end    
+})
+
+Tab4:AddToggle({
+	Name = "Включить анти-лаг у всех",
+	Default = false,
+	Callback = function(Value)
+		DiveLagValue = Value
+		workspace = game:GetService("Workspace")
+		players = game:GetService("Players")
+		localPlayer = players.LocalPlayer  -- Получаем LocalPlayer
+
+while DiveLagValue do
+	for _, object in ipairs(workspace:GetChildren()) do
+        if object.Name == "Explosion" then
+            object:Destroy()  -- Удаляем объект
+        end
+    end
+	for _, player in ipairs(players:GetPlayers()) do
+        -- Проверяем, есть ли PlayerScripts у игрока
+        local playerScripts = player:FindFirstChild("PlayerScripts")
+        if playerScripts then
+            local vfxListener = playerScripts:FindFirstChild("VFXListener")
+            if vfxListener then
+                vfxListener:Destroy()  -- Удаляем файл VFXListener
+            end
+        end
+    end
+	task.wait()
+end
+	end    
+})
+Tab4:AddToggle({
+	Name = "Взрыв сервера с Дайф бомб💥💥💥",
+	Default = false,
+	Callback = function(Value)
+		DiveSpam = Value
+		DivebombExplosion = game.Players.LocalPlayer.Name
+
+while DiveSpam do
+game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["chargeAlpha"] = 99.7833333881571889,["rocketJump"] = true})
+game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["position"] = game.Players[DivebombExplosion].Character.HumanoidRootPart.Position,["explosion"] = true,["explosionAlpha"] = 1000})
+wait(0.00000001)
+end
+	end    
+})
+
+Tab4:AddToggle({
+	Name = "Взрыв сервера с Дайф бомб💥💥💥",
+	Default = false,
+	Callback = function(Value)
+		DiveSpam = Value
+		DivebombExplosion = game.Players.LocalPlayer.Name
+
+while DiveSpam do
+game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["chargeAlpha"] = 99.7833333881571889,["rocketJump"] = true})
+game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["position"] = game.Players[DivebombExplosion].Character.HumanoidRootPart.Position,["explosion"] = true,["explosionAlpha"] = 1000})
+wait(0.00000001)
+end
+	end    
+})
+
+Tab4:AddToggle({
+	Name = "Взрыв сервера с Дайф бомб💥💥💥",
+	Default = false,
+	Callback = function(Value)
+		DiveSpam = Value
+		DivebombExplosion = game.Players.LocalPlayer.Name
+
+while DiveSpam do
+game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["chargeAlpha"] = 99.7833333881571889,["rocketJump"] = true})
+game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["position"] = game.Players[DivebombExplosion].Character.HumanoidRootPart.Position,["explosion"] = true,["explosionAlpha"] = 1000})
+wait(0.00000001)
+end
+	end    
+})
+
+Tab4:AddToggle({
+	Name = "Взрыв сервера с Дайф бомб💥💥💥",
+	Default = false,
+	Callback = function(Value)
+		DiveSpam = Value
+		DivebombExplosion = game.Players.LocalPlayer.Name
+
+while DiveSpam do
+game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["chargeAlpha"] = 99.7833333881571889,["rocketJump"] = true})
+game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["position"] = game.Players[DivebombExplosion].Character.HumanoidRootPart.Position,["explosion"] = true,["explosionAlpha"] = 1000})
+wait(0.00000001)
+end
+	end    
+})
+
+Tab4:AddToggle({
+	Name = "Взрыв сервера с Дайф бомб💥💥💥",
+	Default = false,
+	Callback = function(Value)
+		DiveSpam = Value
+		DivebombExplosion = game.Players.LocalPlayer.Name
+
+while DiveSpam do
+game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["chargeAlpha"] = 99.7833333881571889,["rocketJump"] = true})
+game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["position"] = game.Players[DivebombExplosion].Character.HumanoidRootPart.Position,["explosion"] = true,["explosionAlpha"] = 1000})
+wait(0.00000001)
+end
+	end    
+})
+
+Tab4:AddToggle({
+	Name = "Взрыв сервера с Дайф бомб💥💥💥",
+	Default = false,
+	Callback = function(Value)
+		DiveSpam = Value
+		DivebombExplosion = game.Players.LocalPlayer.Name
+
+while DiveSpam do
+game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["chargeAlpha"] = 99.7833333881571889,["rocketJump"] = true})
+game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["position"] = game.Players[DivebombExplosion].Character.HumanoidRootPart.Position,["explosion"] = true,["explosionAlpha"] = 1000})
+wait(0.00000001)
+end
+	end    
+})
+
+Tab4:AddToggle({
+	Name = "Взрыв сервера с Дайф бомб💥💥💥",
+	Default = false,
+	Callback = function(Value)
+		DiveSpam = Value
+		DivebombExplosion = game.Players.LocalPlayer.Name
+
+while DiveSpam do
+game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["chargeAlpha"] = 99.7833333881571889,["rocketJump"] = true})
+game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["position"] = game.Players[DivebombExplosion].Character.HumanoidRootPart.Position,["explosion"] = true,["explosionAlpha"] = 1000})
+wait(0.00000001)
+end
+	end    
+})
+
+Tab4:AddToggle({
+	Name = "Взрыв сервера с Дайф бомб💥💥💥",
+	Default = false,
+	Callback = function(Value)
+		DiveSpam = Value
+		DivebombExplosion = game.Players.LocalPlayer.Name
+
+while DiveSpam do
+game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["chargeAlpha"] = 99.7833333881571889,["rocketJump"] = true})
+game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["position"] = game.Players[DivebombExplosion].Character.HumanoidRootPart.Position,["explosion"] = true,["explosionAlpha"] = 1000})
+wait(0.00000001)
+end
+	end    
+})
+
+Tab4:AddToggle({
+	Name = "Взрыв сервера с Дайф бомб💥💥💥",
+	Default = false,
+	Callback = function(Value)
+		DiveSpam = Value
+		DivebombExplosion = game.Players.LocalPlayer.Name
+
+while DiveSpam do
+game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["chargeAlpha"] = 99.7833333881571889,["rocketJump"] = true})
+game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["position"] = game.Players[DivebombExplosion].Character.HumanoidRootPart.Position,["explosion"] = true,["explosionAlpha"] = 1000})
+wait(0.00000001)
+end
+	end    
+})
+
+Tab4:AddToggle({
+	Name = "Взрыв сервера с Дайф бомб💥💥💥",
+	Default = false,
+	Callback = function(Value)
+		DiveSpam = Value
+		DivebombExplosion = game.Players.LocalPlayer.Name
+
+while DiveSpam do
+game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["chargeAlpha"] = 99.7833333881571889,["rocketJump"] = true})
+game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["position"] = game.Players[DivebombExplosion].Character.HumanoidRootPart.Position,["explosion"] = true,["explosionAlpha"] = 1000})
+wait(0.00000001)
+end
+	end    
 })
 
 Tab:AddLabel("Самый топовый скрипт!")
