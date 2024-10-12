@@ -108,15 +108,16 @@ GloveSound = Value
 	end    
 })
 
-Tab3:AddToggle({
-	Name = "Взрыв сервера с косой!",
-	Default = false,
+Tab:AddSlider({
+	Name = "Выбери волну косы😈😈😈",
+	Min = 1,
+	Max = 1000,
+	Default = 1,
+	Color = Color3.fromRGB(0,239,255),
+	Increment = 1,
+	ValueName = "Волна",
 	Callback = function(Value)
-		GloveSoundSpam = Value
-while GloveSoundSpam and GloveSound == "Scythe" do
-game:GetService("ReplicatedStorage").Scythe:FireServer("ScytheWeapon")
-task.wait()
-end
+		Volna = Value
 	end    
 })
 
@@ -126,104 +127,9 @@ Tab3:AddToggle({
 	Callback = function(Value)
 		GloveSoundSpam = Value
 while GloveSoundSpam and GloveSound == "Scythe" do
-game:GetService("ReplicatedStorage").Scythe:FireServer("ScytheWeapon")
-task.wait()
+for i = 1, Volna do
+    game:GetService("ReplicatedStorage").Scythe:FireServer("ScytheWeapon")
 end
-	end    
-})
-
-Tab3:AddToggle({
-	Name = "Взрыв сервера с косой!",
-	Default = false,
-	Callback = function(Value)
-		GloveSoundSpam = Value
-while GloveSoundSpam and GloveSound == "Scythe" do
-game:GetService("ReplicatedStorage").Scythe:FireServer("ScytheWeapon")
-task.wait()
-end
-	end    
-})
-
-Tab3:AddToggle({
-	Name = "Взрыв сервера с косой!",
-	Default = false,
-	Callback = function(Value)
-		GloveSoundSpam = Value
-while GloveSoundSpam and GloveSound == "Scythe" do
-game:GetService("ReplicatedStorage").Scythe:FireServer("ScytheWeapon")
-task.wait()
-end
-	end    
-})
-
-Tab3:AddToggle({
-	Name = "Взрыв сервера с косой!",
-	Default = false,
-	Callback = function(Value)
-		GloveSoundSpam = Value
-while GloveSoundSpam and GloveSound == "Scythe" do
-game:GetService("ReplicatedStorage").Scythe:FireServer("ScytheWeapon")
-task.wait()
-end
-	end    
-})
-
-Tab3:AddToggle({
-	Name = "Взрыв сервера с косой!",
-	Default = false,
-	Callback = function(Value)
-		GloveSoundSpam = Value
-while GloveSoundSpam and GloveSound == "Scythe" do
-game:GetService("ReplicatedStorage").Scythe:FireServer("ScytheWeapon")
-task.wait()
-end
-	end    
-})
-
-Tab3:AddToggle({
-	Name = "Взрыв сервера с косой!",
-	Default = false,
-	Callback = function(Value)
-		GloveSoundSpam = Value
-while GloveSoundSpam and GloveSound == "Scythe" do
-game:GetService("ReplicatedStorage").Scythe:FireServer("ScytheWeapon")
-task.wait()
-end
-	end    
-})
-
-Tab3:AddToggle({
-	Name = "Взрыв сервера с косой!",
-	Default = false,
-	Callback = function(Value)
-		GloveSoundSpam = Value
-while GloveSoundSpam and GloveSound == "Scythe" do
-game:GetService("ReplicatedStorage").Scythe:FireServer("ScytheWeapon")
-task.wait()
-end
-	end    
-})
-
-Tab3:AddToggle({
-	Name = "Взрыв сервера с косой!",
-	Default = false,
-	Callback = function(Value)
-		GloveSoundSpam = Value
-while GloveSoundSpam and GloveSound == "Scythe" do
-game:GetService("ReplicatedStorage").Scythe:FireServer("ScytheWeapon")
-task.wait()
-end
-	end    
-})
-
-Tab3:AddToggle({
-	Name = "Взрыв сервера с косой!",
-	Default = false,
-	Callback = function(Value)
-		GloveSoundSpam = Value
-while GloveSoundSpam and GloveSound == "Scythe" do
-game:GetService("ReplicatedStorage").Scythe:FireServer("ScytheWeapon")
-task.wait()
 end
 	end    
 })
