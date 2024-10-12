@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Bendyshechka/XenkaliScript/refs/heads/main/Library')))()
-local Window = OrionLib:MakeWindow({Name = "Slap battles💀", HidePremium = false, SaveConfig = true, ConfigFolder = "Lag"})
+local Window = OrionLib:MakeWindow({Name = "Slap battles ping crasher💀", HidePremium = false, SaveConfig = true, ConfigFolder = "Lag"})
 
 local Tab = Window:MakeTab({
 	Name = "Информация😶‍🌫️",
@@ -31,12 +31,6 @@ local Tab4 = Window:MakeTab({
 	PremiumOnly = false
 })
 
-local Tab5 = Window:MakeTab({
-	Name = "💤💤💤",
-	Icon = "rbxassetid://7733917120",
-	PremiumOnly = false
-})
-
 Tab1:AddButton({
 	Name = "Флай💩",
 	Callback = function()
@@ -59,13 +53,13 @@ humanoidRootPart.CFrame = CFrame.new(17902, -23, -3534)
   	end    
 })
 
-Tab3:AddDropdown({
-	Name = "Не трогать!",
-	Default = "runeffect",
-	Options = {"runeffect"},
+Tab2:AddTextbox({
+	Name = "Своя волна😈😈😈:",
+	Default = 1,
+	TextDisappear = false,
 	Callback = function(Value)
-Slapstick111 = Value
-	end    
+		Volna = Value
+	end	  
 })
 
 Tab2:AddToggle({
@@ -73,8 +67,9 @@ Tab2:AddToggle({
 	Default = false,
 	Callback = function(Value)
 		GloveSoundSpam = Value
-while GloveSoundSpam and Slapstick111 == "runeffect" do
-local player = game.Players.LocalPlayer
+while GloveSoundSpam do
+for i = 1, Volna do
+    local player = game.Players.LocalPlayer
 local character = player.Character or player.CharacterAdded:Wait()
 
 -- Ждём, пока персонаж полностью загрузится
@@ -90,230 +85,6 @@ end
 game:GetService("ReplicatedStorage").slapstick:FireServer(Slapstick111)
 task.wait()
 end
-	end    
-})
-
-Tab2:AddToggle({
-	Name = "Взрыв сервера со слапстик!😈",
-	Default = false,
-	Callback = function(Value)
-		GloveSoundSpam = Value
-while GloveSoundSpam and Slapstick111 == "runeffect" do
-local player = game.Players.LocalPlayer
-local character = player.Character or player.CharacterAdded:Wait()
-
--- Ждём, пока персонаж полностью загрузится
-character:WaitForChild("Humanoid")
-
--- Проходим по всем потомкам персонажа
-for _, obj in ipairs(character:GetDescendants()) do
-    if obj.Name == "runblur" then
-        obj:Destroy()  -- Удаляем все объекты с названием "runblur"
-    end
-end
-
-game:GetService("ReplicatedStorage").slapstick:FireServer(Slapstick111)
-task.wait()
-end
-	end    
-})
-
-Tab2:AddToggle({
-	Name = "Взрыв сервера со слапстик!😈",
-	Default = false,
-	Callback = function(Value)
-		GloveSoundSpam = Value
-while GloveSoundSpam and Slapstick111 == "runeffect" do
-local player = game.Players.LocalPlayer
-local character = player.Character or player.CharacterAdded:Wait()
-
--- Ждём, пока персонаж полностью загрузится
-character:WaitForChild("Humanoid")
-
--- Проходим по всем потомкам персонажа
-for _, obj in ipairs(character:GetDescendants()) do
-    if obj.Name == "runblur" then
-        obj:Destroy()  -- Удаляем все объекты с названием "runblur"
-    end
-end
-
-game:GetService("ReplicatedStorage").slapstick:FireServer(Slapstick111)
-task.wait()
-end
-	end    
-})
-
-Tab2:AddToggle({
-	Name = "Взрыв сервера со слапстик!😈",
-	Default = false,
-	Callback = function(Value)
-		GloveSoundSpam = Value
-while GloveSoundSpam and Slapstick111 == "runeffect" do
-local player = game.Players.LocalPlayer
-local character = player.Character or player.CharacterAdded:Wait()
-
--- Ждём, пока персонаж полностью загрузится
-character:WaitForChild("Humanoid")
-
--- Проходим по всем потомкам персонажа
-for _, obj in ipairs(character:GetDescendants()) do
-    if obj.Name == "runblur" then
-        obj:Destroy()  -- Удаляем все объекты с названием "runblur"
-    end
-end
-
-game:GetService("ReplicatedStorage").slapstick:FireServer(Slapstick111)
-task.wait()
-end
-	end    
-})
-
-Tab2:AddToggle({
-	Name = "Взрыв сервера со слапстик!😈",
-	Default = false,
-	Callback = function(Value)
-		GloveSoundSpam = Value
-while GloveSoundSpam and Slapstick111 == "runeffect" do
-local player = game.Players.LocalPlayer
-local character = player.Character or player.CharacterAdded:Wait()
-
--- Ждём, пока персонаж полностью загрузится
-character:WaitForChild("Humanoid")
-
--- Проходим по всем потомкам персонажа
-for _, obj in ipairs(character:GetDescendants()) do
-    if obj.Name == "runblur" then
-        obj:Destroy()  -- Удаляем все объекты с названием "runblur"
-    end
-end
-
-game:GetService("ReplicatedStorage").slapstick:FireServer(Slapstick111)
-task.wait()
-end
-	end    
-})
-
-Tab2:AddToggle({
-	Name = "Взрыв сервера со слапстик!😈",
-	Default = false,
-	Callback = function(Value)
-		GloveSoundSpam = Value
-while GloveSoundSpam and Slapstick111 == "runeffect" do
-local player = game.Players.LocalPlayer
-local character = player.Character or player.CharacterAdded:Wait()
-
--- Ждём, пока персонаж полностью загрузится
-character:WaitForChild("Humanoid")
-
--- Проходим по всем потомкам персонажа
-for _, obj in ipairs(character:GetDescendants()) do
-    if obj.Name == "runblur" then
-        obj:Destroy()  -- Удаляем все объекты с названием "runblur"
-    end
-end
-
-game:GetService("ReplicatedStorage").slapstick:FireServer(Slapstick111)
-task.wait()
-end
-	end    
-})
-
-Tab2:AddToggle({
-	Name = "Взрыв сервера со слапстик!😈",
-	Default = false,
-	Callback = function(Value)
-		GloveSoundSpam = Value
-while GloveSoundSpam and Slapstick111 == "runeffect" do
-local player = game.Players.LocalPlayer
-local character = player.Character or player.CharacterAdded:Wait()
-
--- Ждём, пока персонаж полностью загрузится
-character:WaitForChild("Humanoid")
-
--- Проходим по всем потомкам персонажа
-for _, obj in ipairs(character:GetDescendants()) do
-    if obj.Name == "runblur" then
-        obj:Destroy()  -- Удаляем все объекты с названием "runblur"
-    end
-end
-
-game:GetService("ReplicatedStorage").slapstick:FireServer(Slapstick111)
-task.wait()
-end
-	end    
-})
-
-Tab2:AddToggle({
-	Name = "Взрыв сервера со слапстик!😈",
-	Default = false,
-	Callback = function(Value)
-		GloveSoundSpam = Value
-while GloveSoundSpam and Slapstick111 == "runeffect" do
-local player = game.Players.LocalPlayer
-local character = player.Character or player.CharacterAdded:Wait()
-
--- Ждём, пока персонаж полностью загрузится
-character:WaitForChild("Humanoid")
-
--- Проходим по всем потомкам персонажа
-for _, obj in ipairs(character:GetDescendants()) do
-    if obj.Name == "runblur" then
-        obj:Destroy()  -- Удаляем все объекты с названием "runblur"
-    end
-end
-
-game:GetService("ReplicatedStorage").slapstick:FireServer(Slapstick111)
-task.wait()
-end
-	end    
-})
-
-Tab2:AddToggle({
-	Name = "Взрыв сервера со слапстик!😈",
-	Default = false,
-	Callback = function(Value)
-		GloveSoundSpam = Value
-while GloveSoundSpam and Slapstick111 == "runeffect" do
-local player = game.Players.LocalPlayer
-local character = player.Character or player.CharacterAdded:Wait()
-
--- Ждём, пока персонаж полностью загрузится
-character:WaitForChild("Humanoid")
-
--- Проходим по всем потомкам персонажа
-for _, obj in ipairs(character:GetDescendants()) do
-    if obj.Name == "runblur" then
-        obj:Destroy()  -- Удаляем все объекты с названием "runblur"
-    end
-end
-
-game:GetService("ReplicatedStorage").slapstick:FireServer(Slapstick111)
-task.wait()
-end
-	end    
-})
-
-Tab2:AddToggle({
-	Name = "Взрыв сервера со слапстик!😈",
-	Default = false,
-	Callback = function(Value)
-		GloveSoundSpam = Value
-while GloveSoundSpam and Slapstick111 == "runeffect" do
-local player = game.Players.LocalPlayer
-local character = player.Character or player.CharacterAdded:Wait()
-
--- Ждём, пока персонаж полностью загрузится
-character:WaitForChild("Humanoid")
-
--- Проходим по всем потомкам персонажа
-for _, obj in ipairs(character:GetDescendants()) do
-    if obj.Name == "runblur" then
-        obj:Destroy()  -- Удаляем все объекты с названием "runblur"
-    end
-end
-
-game:GetService("ReplicatedStorage").slapstick:FireServer(Slapstick111)
-task.wait()
 end
 	end    
 })
@@ -356,26 +127,13 @@ Tab3:AddButton({
 	end    
 })
 
-Tab3:AddDropdown({
-	Name = "Не трогать!",
-	Default = "Scythe",
-	Options = {"Scythe"},
-	Callback = function(Value)
-GloveSound = Value
-	end    
-})
-
-Tab3:AddSlider({
-	Name = "Выбери волну косы😈😈😈(Не всегда сука работает)",
-	Min = 1,
-	Max = 1000,
+Tab3:AddTextbox({
+	Name = "Своя волна😈😈😈:",
 	Default = 1,
-	Color = Color3.fromRGB(0,239,255),
-	Increment = 1,
-	ValueName = "Волна",
+	TextDisappear = false,
 	Callback = function(Value)
 		Volna = Value
-	end    
+	end	  
 })
 
 Tab3:AddToggle({
@@ -383,143 +141,19 @@ Tab3:AddToggle({
 	Default = false,
 	Callback = function(Value)
 		GloveSoundSpam = Value
-while GloveSoundSpam and GloveSound == "Scythe" do
+while GloveSoundSpam do
 for i = 1, Volna do
+	while GloveSoundSpam do
     game:GetService("ReplicatedStorage").Scythe:FireServer("ScytheWeapon")
 	task.wait()
-end
-end
-	end    
-})
-
-Tab3:AddToggle({
-	Name = "Взрыв сервера с косой!",
-	Default = false,
-	Callback = function(Value)
-		GloveSoundSpam = Value
-while GloveSoundSpam and GloveSound == "Scythe" do
-for i = 1, Volna do
-    game:GetService("ReplicatedStorage").Scythe:FireServer("ScytheWeapon")
-	task.wait()
-end
-end
-	end    
-})
-
-Tab3:AddToggle({
-	Name = "Взрыв сервера с косой!",
-	Default = false,
-	Callback = function(Value)
-		GloveSoundSpam = Value
-while GloveSoundSpam and GloveSound == "Scythe" do
-for i = 1, Volna do
-    game:GetService("ReplicatedStorage").Scythe:FireServer("ScytheWeapon")
-	task.wait()
-end
-end
-	end    
-})
-
-Tab3:AddToggle({
-	Name = "Взрыв сервера с косой!",
-	Default = false,
-	Callback = function(Value)
-		GloveSoundSpam = Value
-while GloveSoundSpam and GloveSound == "Scythe" do
-for i = 1, Volna do
-    game:GetService("ReplicatedStorage").Scythe:FireServer("ScytheWeapon")
-	task.wait()
-end
-end
-	end    
-})
-
-Tab3:AddToggle({
-	Name = "Взрыв сервера с косой!",
-	Default = false,
-	Callback = function(Value)
-		GloveSoundSpam = Value
-while GloveSoundSpam and GloveSound == "Scythe" do
-for i = 1, Volna do
-    game:GetService("ReplicatedStorage").Scythe:FireServer("ScytheWeapon")
-	task.wait()
-end
-end
-	end    
-})
-
-Tab3:AddToggle({
-	Name = "Взрыв сервера с косой!",
-	Default = false,
-	Callback = function(Value)
-		GloveSoundSpam = Value
-while GloveSoundSpam and GloveSound == "Scythe" do
-for i = 1, Volna do
-    game:GetService("ReplicatedStorage").Scythe:FireServer("ScytheWeapon")
-	task.wait()
-end
-end
-	end    
-})
-
-Tab3:AddToggle({
-	Name = "Взрыв сервера с косой!",
-	Default = false,
-	Callback = function(Value)
-		GloveSoundSpam = Value
-while GloveSoundSpam and GloveSound == "Scythe" do
-for i = 1, Volna do
-    game:GetService("ReplicatedStorage").Scythe:FireServer("ScytheWeapon")
-	task.wait()
-end
-end
-	end    
-})
-
-Tab3:AddToggle({
-	Name = "Взрыв сервера с косой!",
-	Default = false,
-	Callback = function(Value)
-		GloveSoundSpam = Value
-while GloveSoundSpam and GloveSound == "Scythe" do
-for i = 1, Volna do
-    game:GetService("ReplicatedStorage").Scythe:FireServer("ScytheWeapon")
-	task.wait()
-end
-end
-	end    
-})
-
-Tab3:AddToggle({
-	Name = "Взрыв сервера с косой!",
-	Default = false,
-	Callback = function(Value)
-		GloveSoundSpam = Value
-while GloveSoundSpam and GloveSound == "Scythe" do
-for i = 1, Volna do
-    game:GetService("ReplicatedStorage").Scythe:FireServer("ScytheWeapon")
-	task.wait()
-end
-end
-	end    
-})
-
-Tab3:AddToggle({
-	Name = "Взрыв сервера с косой!",
-	Default = false,
-	Callback = function(Value)
-		GloveSoundSpam = Value
-while GloveSoundSpam and GloveSound == "Scythe" do
-for i = 1, Volna do
-    game:GetService("ReplicatedStorage").Scythe:FireServer("ScytheWeapon")
-	task.wait()
+					end
 end
 end
 	end    
 })
 
 Tab1:AddButton({
-	Name = "Infinite Invisibility",
+	Name = "Невидимость😶‍🌫️",
 	Callback = function()
 if game.Players.LocalPlayer.Character:FindFirstChild("entered") == nil and game.Players.LocalPlayer.leaderstats.Slaps.Value >= 666 then
 OGlove = game.Players.LocalPlayer.leaderstats.Glove.Value
@@ -533,7 +167,7 @@ v.Transparency = 0
 end
 end
 else
-OrionLib:MakeNotification({Name = "Error",Content = "You need to be in lobby and have 666+ slaps.",Image = "rbxassetid://7733658504",Time = 5})
+OrionLib:MakeNotification({Name = "Ошибка!",Content = "Ты должен быть в лобби и у тебя должно быть больше 666 шлепков",Image = "rbxassetid://7733658504",Time = 5})
 end
   	end    
 })
@@ -567,19 +201,13 @@ while DiveLagValue do
 end
 	end    
 })
-Tab4:AddToggle({
-	Name = "Взрыв сервера с Дайф бомб💥💥💥",
-	Default = false,
+Tab4:AddTextbox({
+	Name = "Своя волна😈😈😈:",
+	Default = 1,
+	TextDisappear = false,
 	Callback = function(Value)
-		DiveSpam = Value
-		DivebombExplosion = game.Players.LocalPlayer.Name
-
-while DiveSpam do
-game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["chargeAlpha"] = 99.7833333881571889,["rocketJump"] = true})
-game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["position"] = game.Players[DivebombExplosion].Character.HumanoidRootPart.Position,["explosion"] = true,["explosionAlpha"] = 1000})
-wait(0.00000001)
-end
-	end    
+		Volna = Value
+	end	  
 })
 
 Tab4:AddToggle({
@@ -587,452 +215,16 @@ Tab4:AddToggle({
 	Default = false,
 	Callback = function(Value)
 		DiveSpam = Value
-		DivebombExplosion = game.Players.LocalPlayer.Name
+while DiveSpam do
+for i = 1, Volna do
+    DivebombExplosion = game.Players.LocalPlayer.Name
 
 while DiveSpam do
 game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["chargeAlpha"] = 99.7833333881571889,["rocketJump"] = true})
 game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["position"] = game.Players[DivebombExplosion].Character.HumanoidRootPart.Position,["explosion"] = true,["explosionAlpha"] = 1000})
 wait(0.00000001)
 end
-	end    
-})
-
-Tab4:AddToggle({
-	Name = "Взрыв сервера с Дайф бомб💥💥💥",
-	Default = false,
-	Callback = function(Value)
-		DiveSpam = Value
-		DivebombExplosion = game.Players.LocalPlayer.Name
-
-while DiveSpam do
-game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["chargeAlpha"] = 99.7833333881571889,["rocketJump"] = true})
-game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["position"] = game.Players[DivebombExplosion].Character.HumanoidRootPart.Position,["explosion"] = true,["explosionAlpha"] = 1000})
-wait(0.00000001)
 end
-	end    
-})
-
-Tab4:AddToggle({
-	Name = "Взрыв сервера с Дайф бомб💥💥💥",
-	Default = false,
-	Callback = function(Value)
-		DiveSpam = Value
-		DivebombExplosion = game.Players.LocalPlayer.Name
-
-while DiveSpam do
-game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["chargeAlpha"] = 99.7833333881571889,["rocketJump"] = true})
-game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["position"] = game.Players[DivebombExplosion].Character.HumanoidRootPart.Position,["explosion"] = true,["explosionAlpha"] = 1000})
-wait(0.00000001)
-end
-	end    
-})
-
-Tab4:AddToggle({
-	Name = "Взрыв сервера с Дайф бомб💥💥💥",
-	Default = false,
-	Callback = function(Value)
-		DiveSpam = Value
-		DivebombExplosion = game.Players.LocalPlayer.Name
-
-while DiveSpam do
-game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["chargeAlpha"] = 99.7833333881571889,["rocketJump"] = true})
-game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["position"] = game.Players[DivebombExplosion].Character.HumanoidRootPart.Position,["explosion"] = true,["explosionAlpha"] = 1000})
-wait(0.00000001)
-end
-	end    
-})
-
-Tab4:AddToggle({
-	Name = "Взрыв сервера с Дайф бомб💥💥💥",
-	Default = false,
-	Callback = function(Value)
-		DiveSpam = Value
-		DivebombExplosion = game.Players.LocalPlayer.Name
-
-while DiveSpam do
-game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["chargeAlpha"] = 99.7833333881571889,["rocketJump"] = true})
-game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["position"] = game.Players[DivebombExplosion].Character.HumanoidRootPart.Position,["explosion"] = true,["explosionAlpha"] = 1000})
-wait(0.00000001)
-end
-	end    
-})
-
-Tab4:AddToggle({
-	Name = "Взрыв сервера с Дайф бомб💥💥💥",
-	Default = false,
-	Callback = function(Value)
-		DiveSpam = Value
-		DivebombExplosion = game.Players.LocalPlayer.Name
-
-while DiveSpam do
-game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["chargeAlpha"] = 99.7833333881571889,["rocketJump"] = true})
-game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["position"] = game.Players[DivebombExplosion].Character.HumanoidRootPart.Position,["explosion"] = true,["explosionAlpha"] = 1000})
-wait(0.00000001)
-end
-	end    
-})
-
-Tab4:AddToggle({
-	Name = "Взрыв сервера с Дайф бомб💥💥💥",
-	Default = false,
-	Callback = function(Value)
-		DiveSpam = Value
-		DivebombExplosion = game.Players.LocalPlayer.Name
-
-while DiveSpam do
-game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["chargeAlpha"] = 99.7833333881571889,["rocketJump"] = true})
-game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["position"] = game.Players[DivebombExplosion].Character.HumanoidRootPart.Position,["explosion"] = true,["explosionAlpha"] = 1000})
-wait(0.00000001)
-end
-	end    
-})
-
-Tab4:AddToggle({
-	Name = "Взрыв сервера с Дайф бомб💥💥💥",
-	Default = false,
-	Callback = function(Value)
-		DiveSpam = Value
-		DivebombExplosion = game.Players.LocalPlayer.Name
-
-while DiveSpam do
-game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["chargeAlpha"] = 99.7833333881571889,["rocketJump"] = true})
-game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["position"] = game.Players[DivebombExplosion].Character.HumanoidRootPart.Position,["explosion"] = true,["explosionAlpha"] = 1000})
-wait(0.00000001)
-end
-	end    
-})
-
-Tab4:AddToggle({
-	Name = "Взрыв сервера с Дайф бомб💥💥💥",
-	Default = false,
-	Callback = function(Value)
-		DiveSpam = Value
-		DivebombExplosion = game.Players.LocalPlayer.Name
-
-while DiveSpam do
-game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["chargeAlpha"] = 99.7833333881571889,["rocketJump"] = true})
-game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["position"] = game.Players[DivebombExplosion].Character.HumanoidRootPart.Position,["explosion"] = true,["explosionAlpha"] = 1000})
-wait(0.00000001)
-end
-	end    
-})
-
-Tab5:AddToggle({
-	Name = "Взрыв сервера с ZZZ",
-	Default = false,
-	Callback = function(Value)
-		ZZZValue = Value
-		players = game:GetService("Players")
-localPlayer = players.LocalPlayer  -- Получаем LocalPlayer
-workspace = game:GetService("Workspace")
--- Ждем, пока персонаж игрока загрузится
-character = localPlayer.Character or localPlayer.CharacterAdded:Wait()
-
--- Получаем HumanoidRootPart персонажа
-humanoidRootPart = character:WaitForChild("HumanoidRootPart")
-
--- Сохраняем текущее положение (CFrame) игрока в переменную
-savedCFrame = humanoidRootPart.CFrame
-while ZZZValue do
-    humanoidRootPart.CFrame = savedCFrame
-    game:GetService("ReplicatedStorage").ZZZZZZZSleep:FireServer()
-	for _, object in ipairs(workspace:GetDescendants()) do
-    -- Если это частицы или эффекты, то удаляем
-    if object:IsA("ParticleEmitter") or object:IsA("Trail") or 
-       object:IsA("Smoke") or object:IsA("Fire") or 
-       object:IsA("Sparkles") or object:IsA("Beam") then
-        object:Destroy()  -- Удаляем эффект
-    end
-end
-    task.wait()
-end
-	end    
-})
-
-Tab5:AddToggle({
-	Name = "Взрыв сервера с ZZZ",
-	Default = false,
-	Callback = function(Value)
-		ZZZValue = Value
-		players = game:GetService("Players")
-localPlayer = players.LocalPlayer  -- Получаем LocalPlayer
-workspace = game:GetService("Workspace")
--- Ждем, пока персонаж игрока загрузится
-character = localPlayer.Character or localPlayer.CharacterAdded:Wait()
-
--- Получаем HumanoidRootPart персонажа
-humanoidRootPart = character:WaitForChild("HumanoidRootPart")
-
--- Сохраняем текущее положение (CFrame) игрока в переменную
-savedCFrame = humanoidRootPart.CFrame
-while ZZZValue do
-    humanoidRootPart.CFrame = savedCFrame
-    game:GetService("ReplicatedStorage").ZZZZZZZSleep:FireServer()
-	for _, object in ipairs(workspace:GetDescendants()) do
-    -- Если это частицы или эффекты, то удаляем
-    if object:IsA("ParticleEmitter") or object:IsA("Trail") or 
-       object:IsA("Smoke") or object:IsA("Fire") or 
-       object:IsA("Sparkles") or object:IsA("Beam") then
-        object:Destroy()  -- Удаляем эффект
-    end
-end
-    task.wait()
-end
-	end    
-})
-
-Tab5:AddToggle({
-	Name = "Взрыв сервера с ZZZ",
-	Default = false,
-	Callback = function(Value)
-		ZZZValue = Value
-		players = game:GetService("Players")
-localPlayer = players.LocalPlayer  -- Получаем LocalPlayer
-workspace = game:GetService("Workspace")
--- Ждем, пока персонаж игрока загрузится
-character = localPlayer.Character or localPlayer.CharacterAdded:Wait()
-
--- Получаем HumanoidRootPart персонажа
-humanoidRootPart = character:WaitForChild("HumanoidRootPart")
-
--- Сохраняем текущее положение (CFrame) игрока в переменную
-savedCFrame = humanoidRootPart.CFrame
-while ZZZValue do
-    humanoidRootPart.CFrame = savedCFrame
-    game:GetService("ReplicatedStorage").ZZZZZZZSleep:FireServer()
-	for _, object in ipairs(workspace:GetDescendants()) do
-    -- Если это частицы или эффекты, то удаляем
-    if object:IsA("ParticleEmitter") or object:IsA("Trail") or 
-       object:IsA("Smoke") or object:IsA("Fire") or 
-       object:IsA("Sparkles") or object:IsA("Beam") then
-        object:Destroy()  -- Удаляем эффект
-    end
-end
-    task.wait()
-end
-	end    
-})
-
-Tab5:AddToggle({
-	Name = "Взрыв сервера с ZZZ",
-	Default = false,
-	Callback = function(Value)
-		ZZZValue = Value
-		players = game:GetService("Players")
-localPlayer = players.LocalPlayer  -- Получаем LocalPlayer
-workspace = game:GetService("Workspace")
--- Ждем, пока персонаж игрока загрузится
-character = localPlayer.Character or localPlayer.CharacterAdded:Wait()
-
--- Получаем HumanoidRootPart персонажа
-humanoidRootPart = character:WaitForChild("HumanoidRootPart")
-
--- Сохраняем текущее положение (CFrame) игрока в переменную
-savedCFrame = humanoidRootPart.CFrame
-while ZZZValue do
-    humanoidRootPart.CFrame = savedCFrame
-    game:GetService("ReplicatedStorage").ZZZZZZZSleep:FireServer()
-	for _, object in ipairs(workspace:GetDescendants()) do
-    -- Если это частицы или эффекты, то удаляем
-    if object:IsA("ParticleEmitter") or object:IsA("Trail") or 
-       object:IsA("Smoke") or object:IsA("Fire") or 
-       object:IsA("Sparkles") or object:IsA("Beam") then
-        object:Destroy()  -- Удаляем эффект
-    end
-end
-    task.wait()
-end
-	end    
-})
-
-Tab5:AddToggle({
-	Name = "Взрыв сервера с ZZZ",
-	Default = false,
-	Callback = function(Value)
-		ZZZValue = Value
-		players = game:GetService("Players")
-localPlayer = players.LocalPlayer  -- Получаем LocalPlayer
-workspace = game:GetService("Workspace")
--- Ждем, пока персонаж игрока загрузится
-character = localPlayer.Character or localPlayer.CharacterAdded:Wait()
-
--- Получаем HumanoidRootPart персонажа
-humanoidRootPart = character:WaitForChild("HumanoidRootPart")
-
--- Сохраняем текущее положение (CFrame) игрока в переменную
-savedCFrame = humanoidRootPart.CFrame
-while ZZZValue do
-    humanoidRootPart.CFrame = savedCFrame
-    game:GetService("ReplicatedStorage").ZZZZZZZSleep:FireServer()
-	for _, object in ipairs(workspace:GetDescendants()) do
-    -- Если это частицы или эффекты, то удаляем
-    if object:IsA("ParticleEmitter") or object:IsA("Trail") or 
-       object:IsA("Smoke") or object:IsA("Fire") or 
-       object:IsA("Sparkles") or object:IsA("Beam") then
-        object:Destroy()  -- Удаляем эффект
-    end
-end
-    task.wait()
-end
-	end    
-})
-
-Tab5:AddToggle({
-	Name = "Взрыв сервера с ZZZ",
-	Default = false,
-	Callback = function(Value)
-		ZZZValue = Value
-		players = game:GetService("Players")
-localPlayer = players.LocalPlayer  -- Получаем LocalPlayer
-workspace = game:GetService("Workspace")
--- Ждем, пока персонаж игрока загрузится
-character = localPlayer.Character or localPlayer.CharacterAdded:Wait()
-
--- Получаем HumanoidRootPart персонажа
-humanoidRootPart = character:WaitForChild("HumanoidRootPart")
-
--- Сохраняем текущее положение (CFrame) игрока в переменную
-savedCFrame = humanoidRootPart.CFrame
-while ZZZValue do
-    humanoidRootPart.CFrame = savedCFrame
-    game:GetService("ReplicatedStorage").ZZZZZZZSleep:FireServer()
-	for _, object in ipairs(workspace:GetDescendants()) do
-    -- Если это частицы или эффекты, то удаляем
-    if object:IsA("ParticleEmitter") or object:IsA("Trail") or 
-       object:IsA("Smoke") or object:IsA("Fire") or 
-       object:IsA("Sparkles") or object:IsA("Beam") then
-        object:Destroy()  -- Удаляем эффект
-    end
-end
-    task.wait()
-end
-	end    
-})
-
-Tab5:AddToggle({
-	Name = "Взрыв сервера с ZZZ",
-	Default = false,
-	Callback = function(Value)
-		ZZZValue = Value
-		players = game:GetService("Players")
-localPlayer = players.LocalPlayer  -- Получаем LocalPlayer
-workspace = game:GetService("Workspace")
--- Ждем, пока персонаж игрока загрузится
-character = localPlayer.Character or localPlayer.CharacterAdded:Wait()
-
--- Получаем HumanoidRootPart персонажа
-humanoidRootPart = character:WaitForChild("HumanoidRootPart")
-
--- Сохраняем текущее положение (CFrame) игрока в переменную
-savedCFrame = humanoidRootPart.CFrame
-while ZZZValue do
-    humanoidRootPart.CFrame = savedCFrame
-    game:GetService("ReplicatedStorage").ZZZZZZZSleep:FireServer()
-	for _, object in ipairs(workspace:GetDescendants()) do
-    -- Если это частицы или эффекты, то удаляем
-    if object:IsA("ParticleEmitter") or object:IsA("Trail") or 
-       object:IsA("Smoke") or object:IsA("Fire") or 
-       object:IsA("Sparkles") or object:IsA("Beam") then
-        object:Destroy()  -- Удаляем эффект
-    end
-end
-    task.wait()
-end
-	end    
-})
-
-Tab5:AddToggle({
-	Name = "Взрыв сервера с ZZZ",
-	Default = false,
-	Callback = function(Value)
-		ZZZValue = Value
-		players = game:GetService("Players")
-localPlayer = players.LocalPlayer  -- Получаем LocalPlayer
-workspace = game:GetService("Workspace")
--- Ждем, пока персонаж игрока загрузится
-character = localPlayer.Character or localPlayer.CharacterAdded:Wait()
-
--- Получаем HumanoidRootPart персонажа
-humanoidRootPart = character:WaitForChild("HumanoidRootPart")
-
--- Сохраняем текущее положение (CFrame) игрока в переменную
-savedCFrame = humanoidRootPart.CFrame
-while ZZZValue do
-    humanoidRootPart.CFrame = savedCFrame
-    game:GetService("ReplicatedStorage").ZZZZZZZSleep:FireServer()
-	for _, object in ipairs(workspace:GetDescendants()) do
-    -- Если это частицы или эффекты, то удаляем
-    if object:IsA("ParticleEmitter") or object:IsA("Trail") or 
-       object:IsA("Smoke") or object:IsA("Fire") or 
-       object:IsA("Sparkles") or object:IsA("Beam") then
-        object:Destroy()  -- Удаляем эффект
-    end
-end
-    task.wait()
-end
-	end    
-})
-
-Tab5:AddToggle({
-	Name = "Взрыв сервера с ZZZ",
-	Default = false,
-	Callback = function(Value)
-		ZZZValue = Value
-		players = game:GetService("Players")
-localPlayer = players.LocalPlayer  -- Получаем LocalPlayer
-workspace = game:GetService("Workspace")
--- Ждем, пока персонаж игрока загрузится
-character = localPlayer.Character or localPlayer.CharacterAdded:Wait()
-
--- Получаем HumanoidRootPart персонажа
-humanoidRootPart = character:WaitForChild("HumanoidRootPart")
-
--- Сохраняем текущее положение (CFrame) игрока в переменную
-savedCFrame = humanoidRootPart.CFrame
-while ZZZValue do
-    humanoidRootPart.CFrame = savedCFrame
-    game:GetService("ReplicatedStorage").ZZZZZZZSleep:FireServer()
-	for _, object in ipairs(workspace:GetDescendants()) do
-    -- Если это частицы или эффекты, то удаляем
-    if object:IsA("ParticleEmitter") or object:IsA("Trail") or 
-       object:IsA("Smoke") or object:IsA("Fire") or 
-       object:IsA("Sparkles") or object:IsA("Beam") then
-        object:Destroy()  -- Удаляем эффект
-    end
-end
-    task.wait()
-end
-	end    
-})
-
-Tab5:AddToggle({
-	Name = "Взрыв сервера с ZZZ",
-	Default = false,
-	Callback = function(Value)
-		ZZZValue = Value
-		players = game:GetService("Players")
-localPlayer = players.LocalPlayer  -- Получаем LocalPlayer
-workspace = game:GetService("Workspace")
--- Ждем, пока персонаж игрока загрузится
-character = localPlayer.Character or localPlayer.CharacterAdded:Wait()
-
--- Получаем HumanoidRootPart персонажа
-humanoidRootPart = character:WaitForChild("HumanoidRootPart")
-
--- Сохраняем текущее положение (CFrame) игрока в переменную
-savedCFrame = humanoidRootPart.CFrame
-while ZZZValue do
-    humanoidRootPart.CFrame = savedCFrame
-    game:GetService("ReplicatedStorage").ZZZZZZZSleep:FireServer()
-	for _, object in ipairs(workspace:GetDescendants()) do
-    -- Если это частицы или эффекты, то удаляем
-    if object:IsA("ParticleEmitter") or object:IsA("Trail") or 
-       object:IsA("Smoke") or object:IsA("Fire") or 
-       object:IsA("Sparkles") or object:IsA("Beam") then
-        object:Destroy()  -- Удаляем эффект
-    end
-end
-    task.wait()
 end
 	end    
 })
