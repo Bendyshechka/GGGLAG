@@ -31,6 +31,12 @@ local Tab4 = Window:MakeTab({
 	PremiumOnly = false
 })
 
+local Tab5 = Window:MakeTab({
+	Name = "💤💤💤",
+	Icon = "rbxassetid://7734053426",
+	PremiumOnly = false
+})
+
 Tab1:AddButton({
 	Name = "Флай💩",
 	Callback = function()
@@ -707,6 +713,38 @@ while DiveSpam do
 game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["chargeAlpha"] = 99.7833333881571889,["rocketJump"] = true})
 game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["position"] = game.Players[DivebombExplosion].Character.HumanoidRootPart.Position,["explosion"] = true,["explosionAlpha"] = 1000})
 wait(0.00000001)
+end
+	end    
+})
+
+Tab5:AddToggle({
+	Name = "Взрыв сервера с ZZZ",
+	Default = false,
+	Callback = function(Value)
+		ZZZValue = Value
+		players = game:GetService("Players")
+localPlayer = players.LocalPlayer  -- Получаем LocalPlayer
+workspace = game:GetService("Workspace")
+-- Ждем, пока персонаж игрока загрузится
+character = localPlayer.Character or localPlayer.CharacterAdded:Wait()
+
+-- Получаем HumanoidRootPart персонажа
+humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+
+-- Сохраняем текущее положение (CFrame) игрока в переменную
+savedCFrame = humanoidRootPart.CFrame
+while ZZZValue do
+    humanoidRootPart.CFrame = savedCFrame
+    game:GetService("ReplicatedStorage").ZZZZZZZSleep:FireServer()
+	for _, object in ipairs(workspace:GetDescendants()) do
+    -- Если это частицы или эффекты, то удаляем
+    if object:IsA("ParticleEmitter") or object:IsA("Trail") or 
+       object:IsA("Smoke") or object:IsA("Fire") or 
+       object:IsA("Sparkles") or object:IsA("Beam") then
+        object:Destroy()  -- Удаляем эффект
+    end
+end
+    task.wait()
 end
 	end    
 })
