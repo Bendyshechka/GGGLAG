@@ -108,7 +108,7 @@ GloveSound = Value
 	end    
 })
 
-Tab:AddSlider({
+Tab3:AddSlider({
 	Name = "Выбери волну косы😈😈😈",
 	Min = 1,
 	Max = 1000,
