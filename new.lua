@@ -8,7 +8,7 @@ local Tab = Window:MakeTab({
 })
 
 local Tab1 = Window:MakeTab({
-	Name = "Другие скрипты🤫",
+	Name = "Вспомогательное😈",
 	Icon = "rbxassetid://8997387937",
 	PremiumOnly = false
 })
@@ -504,6 +504,26 @@ for i = 1, Volna do
 end
 end
 	end    
+})
+
+Tab1:AddButton({
+	Name = "Бесконечная невидимость",
+	Callback = function()
+if game.Players.LocalPlayer.Character:FindFirstChild("entered") == nil and game.Players.LocalPlayer.leaderstats.Slaps.Value >= 666 then
+OGlove = game.Players.LocalPlayer.leaderstats.Glove.Value
+fireclickdetector(workspace.Lobby.Ghost.ClickDetector)
+game.ReplicatedStorage.Ghostinvisibilityactivated:FireServer()
+fireclickdetector(workspace.Lobby[OGlove].ClickDetector)
+task.wait(1)
+for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+if v.Name  ~= "Humanoid" then
+v.Transparency = 0
+end
+end
+else
+OrionLib:MakeNotification({Name = "Ошибка",Content = "Еблан, ты должен быть в лобби и ут тебя должно быть больше 666 шлепков.",Image = "rbxassetid://7733658504",Time = 5})
+end
+  	end    
 })
 
 Tab:AddLabel("Самый топовый скрипт!")
