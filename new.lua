@@ -32,6 +32,21 @@ Tab1:AddButton({
   	end    
 })
 
+Tab1:AddButton({
+	Name = "Телепорт в верх хантера😭",
+	Callback = function()
+      		local players = game:GetService("Players")
+local localPlayer = players.LocalPlayer  -- Получаем LocalPlayer
+
+local character = localPlayer.Character or localPlayer.CharacterAdded:Wait()  -- Ждем загрузки персонажа
+local humanoidRootPart = character:WaitForChild("HumanoidRootPart")  -- Ждем загрузки HumanoidRootPart
+
+-- Устанавливаем новый CFrame
+humanoidRootPart.CFrame = CFrame.new(17902, -23, -3534)
+
+  	end    
+})
+
 Tab3:AddDropdown({
 	Name = "Не трогать!",
 	Default = "runeffect",
