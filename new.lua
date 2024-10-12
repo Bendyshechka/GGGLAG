@@ -292,7 +292,7 @@ end
 })
 
 Tab3:AddButton({
-	Name = "Включить анти-лаг косы😈",
+	Name = "Включить анти-лаг косы только у себя😈",
 	Callback = function()
             local player = game.Players.LocalPlayer
 local character = workspace:FindFirstChild(player.Name)  -- Находим персонажа локального игрока в Workspace
@@ -310,18 +310,23 @@ end
 Tab3:AddButton({
 	Name = "Включить анти-лаг у всех😈😭",
 	Callback = function()
-            local players = game.Players
-
-for _, player in ipairs(players:GetPlayers()) do
-        local character = workspace:FindFirstChild(player.Name)
-        if character then
-            local rightArm = character:FindFirstChild("Right Arm")
-            if rightArm then
-                rightArm:Destroy()  -- Удаляем объект "Right Arm" только на клиенте
-            end
-        end
-    end
-  	end    
+		local players = game:GetService("Players")
+		local localPlayer = players.LocalPlayer  -- Получаем LocalPlayer
+		
+		for _, player in ipairs(players:GetPlayers()) do
+			-- Пропускаем LocalPlayer
+			if player ~= localPlayer then
+				local character = player.Character or workspace:FindFirstChild(player.Name)
+				if character then
+					-- Проверяем и удаляем части рук для R6 и R15
+					local rightArm = character:FindFirstChild("Right Arm") or character:FindFirstChild("RightHand")
+					if rightArm then
+						rightArm:Destroy()  -- Удаляем часть тела на стороне сервера
+					end
+				end
+			end
+		end
+	end    
 })
 
 Tab3:AddDropdown({
