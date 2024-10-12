@@ -129,6 +129,7 @@ Tab3:AddToggle({
 while GloveSoundSpam and GloveSound == "Scythe" do
 for i = 1, Volna do
     game:GetService("ReplicatedStorage").Scythe:FireServer("ScytheWeapon")
+	task.wait()
 end
 end
 	end    
