@@ -507,7 +507,7 @@ end
 })
 
 Tab1:AddButton({
-	Name = "Бесконечная невидимость",
+	Name = "Infinite Invisibility",
 	Callback = function()
 if game.Players.LocalPlayer.Character:FindFirstChild("entered") == nil and game.Players.LocalPlayer.leaderstats.Slaps.Value >= 666 then
 OGlove = game.Players.LocalPlayer.leaderstats.Glove.Value
@@ -521,7 +521,7 @@ v.Transparency = 0
 end
 end
 else
-OrionLib:MakeNotification({Name = "Ошибка",Content = "Еблан, ты должен быть в лобби и ут тебя должно быть больше 666 шлепков.",Image = "rbxassetid://7733658504",Time = 5})
+OrionLib:MakeNotification({Name = "Error",Content = "You need to be in lobby and have 666+ slaps.",Image = "rbxassetid://7733658504",Time = 5})
 end
   	end    
 })
