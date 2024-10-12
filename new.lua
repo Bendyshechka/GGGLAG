@@ -2,7 +2,7 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Ben
 local Window = OrionLib:MakeWindow({Name = "Slap battles💀", HidePremium = false, SaveConfig = true, ConfigFolder = "Lag"})
 
 local Tab = Window:MakeTab({
-	Name = "Информация😶‍🌫️",
+	Name = "Информация",
 	Icon = "rbxassetid://7734053426",
 	PremiumOnly = false
 })
