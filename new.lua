@@ -749,5 +749,293 @@ end
 	end    
 })
 
+Tab5:AddToggle({
+	Name = "Взрыв сервера с ZZZ",
+	Default = false,
+	Callback = function(Value)
+		ZZZValue = Value
+		players = game:GetService("Players")
+localPlayer = players.LocalPlayer  -- Получаем LocalPlayer
+workspace = game:GetService("Workspace")
+-- Ждем, пока персонаж игрока загрузится
+character = localPlayer.Character or localPlayer.CharacterAdded:Wait()
+
+-- Получаем HumanoidRootPart персонажа
+humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+
+-- Сохраняем текущее положение (CFrame) игрока в переменную
+savedCFrame = humanoidRootPart.CFrame
+while ZZZValue do
+    humanoidRootPart.CFrame = savedCFrame
+    game:GetService("ReplicatedStorage").ZZZZZZZSleep:FireServer()
+	for _, object in ipairs(workspace:GetDescendants()) do
+    -- Если это частицы или эффекты, то удаляем
+    if object:IsA("ParticleEmitter") or object:IsA("Trail") or 
+       object:IsA("Smoke") or object:IsA("Fire") or 
+       object:IsA("Sparkles") or object:IsA("Beam") then
+        object:Destroy()  -- Удаляем эффект
+    end
+end
+    task.wait()
+end
+	end    
+})
+
+Tab5:AddToggle({
+	Name = "Взрыв сервера с ZZZ",
+	Default = false,
+	Callback = function(Value)
+		ZZZValue = Value
+		players = game:GetService("Players")
+localPlayer = players.LocalPlayer  -- Получаем LocalPlayer
+workspace = game:GetService("Workspace")
+-- Ждем, пока персонаж игрока загрузится
+character = localPlayer.Character or localPlayer.CharacterAdded:Wait()
+
+-- Получаем HumanoidRootPart персонажа
+humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+
+-- Сохраняем текущее положение (CFrame) игрока в переменную
+savedCFrame = humanoidRootPart.CFrame
+while ZZZValue do
+    humanoidRootPart.CFrame = savedCFrame
+    game:GetService("ReplicatedStorage").ZZZZZZZSleep:FireServer()
+	for _, object in ipairs(workspace:GetDescendants()) do
+    -- Если это частицы или эффекты, то удаляем
+    if object:IsA("ParticleEmitter") or object:IsA("Trail") or 
+       object:IsA("Smoke") or object:IsA("Fire") or 
+       object:IsA("Sparkles") or object:IsA("Beam") then
+        object:Destroy()  -- Удаляем эффект
+    end
+end
+    task.wait()
+end
+	end    
+})
+
+Tab5:AddToggle({
+	Name = "Взрыв сервера с ZZZ",
+	Default = false,
+	Callback = function(Value)
+		ZZZValue = Value
+		players = game:GetService("Players")
+localPlayer = players.LocalPlayer  -- Получаем LocalPlayer
+workspace = game:GetService("Workspace")
+-- Ждем, пока персонаж игрока загрузится
+character = localPlayer.Character or localPlayer.CharacterAdded:Wait()
+
+-- Получаем HumanoidRootPart персонажа
+humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+
+-- Сохраняем текущее положение (CFrame) игрока в переменную
+savedCFrame = humanoidRootPart.CFrame
+while ZZZValue do
+    humanoidRootPart.CFrame = savedCFrame
+    game:GetService("ReplicatedStorage").ZZZZZZZSleep:FireServer()
+	for _, object in ipairs(workspace:GetDescendants()) do
+    -- Если это частицы или эффекты, то удаляем
+    if object:IsA("ParticleEmitter") or object:IsA("Trail") or 
+       object:IsA("Smoke") or object:IsA("Fire") or 
+       object:IsA("Sparkles") or object:IsA("Beam") then
+        object:Destroy()  -- Удаляем эффект
+    end
+end
+    task.wait()
+end
+	end    
+})
+
+Tab5:AddToggle({
+	Name = "Взрыв сервера с ZZZ",
+	Default = false,
+	Callback = function(Value)
+		ZZZValue = Value
+		players = game:GetService("Players")
+localPlayer = players.LocalPlayer  -- Получаем LocalPlayer
+workspace = game:GetService("Workspace")
+-- Ждем, пока персонаж игрока загрузится
+character = localPlayer.Character or localPlayer.CharacterAdded:Wait()
+
+-- Получаем HumanoidRootPart персонажа
+humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+
+-- Сохраняем текущее положение (CFrame) игрока в переменную
+savedCFrame = humanoidRootPart.CFrame
+while ZZZValue do
+    humanoidRootPart.CFrame = savedCFrame
+    game:GetService("ReplicatedStorage").ZZZZZZZSleep:FireServer()
+	for _, object in ipairs(workspace:GetDescendants()) do
+    -- Если это частицы или эффекты, то удаляем
+    if object:IsA("ParticleEmitter") or object:IsA("Trail") or 
+       object:IsA("Smoke") or object:IsA("Fire") or 
+       object:IsA("Sparkles") or object:IsA("Beam") then
+        object:Destroy()  -- Удаляем эффект
+    end
+end
+    task.wait()
+end
+	end    
+})
+
+Tab5:AddToggle({
+	Name = "Взрыв сервера с ZZZ",
+	Default = false,
+	Callback = function(Value)
+		ZZZValue = Value
+		players = game:GetService("Players")
+localPlayer = players.LocalPlayer  -- Получаем LocalPlayer
+workspace = game:GetService("Workspace")
+-- Ждем, пока персонаж игрока загрузится
+character = localPlayer.Character or localPlayer.CharacterAdded:Wait()
+
+-- Получаем HumanoidRootPart персонажа
+humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+
+-- Сохраняем текущее положение (CFrame) игрока в переменную
+savedCFrame = humanoidRootPart.CFrame
+while ZZZValue do
+    humanoidRootPart.CFrame = savedCFrame
+    game:GetService("ReplicatedStorage").ZZZZZZZSleep:FireServer()
+	for _, object in ipairs(workspace:GetDescendants()) do
+    -- Если это частицы или эффекты, то удаляем
+    if object:IsA("ParticleEmitter") or object:IsA("Trail") or 
+       object:IsA("Smoke") or object:IsA("Fire") or 
+       object:IsA("Sparkles") or object:IsA("Beam") then
+        object:Destroy()  -- Удаляем эффект
+    end
+end
+    task.wait()
+end
+	end    
+})
+
+Tab5:AddToggle({
+	Name = "Взрыв сервера с ZZZ",
+	Default = false,
+	Callback = function(Value)
+		ZZZValue = Value
+		players = game:GetService("Players")
+localPlayer = players.LocalPlayer  -- Получаем LocalPlayer
+workspace = game:GetService("Workspace")
+-- Ждем, пока персонаж игрока загрузится
+character = localPlayer.Character or localPlayer.CharacterAdded:Wait()
+
+-- Получаем HumanoidRootPart персонажа
+humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+
+-- Сохраняем текущее положение (CFrame) игрока в переменную
+savedCFrame = humanoidRootPart.CFrame
+while ZZZValue do
+    humanoidRootPart.CFrame = savedCFrame
+    game:GetService("ReplicatedStorage").ZZZZZZZSleep:FireServer()
+	for _, object in ipairs(workspace:GetDescendants()) do
+    -- Если это частицы или эффекты, то удаляем
+    if object:IsA("ParticleEmitter") or object:IsA("Trail") or 
+       object:IsA("Smoke") or object:IsA("Fire") or 
+       object:IsA("Sparkles") or object:IsA("Beam") then
+        object:Destroy()  -- Удаляем эффект
+    end
+end
+    task.wait()
+end
+	end    
+})
+
+Tab5:AddToggle({
+	Name = "Взрыв сервера с ZZZ",
+	Default = false,
+	Callback = function(Value)
+		ZZZValue = Value
+		players = game:GetService("Players")
+localPlayer = players.LocalPlayer  -- Получаем LocalPlayer
+workspace = game:GetService("Workspace")
+-- Ждем, пока персонаж игрока загрузится
+character = localPlayer.Character or localPlayer.CharacterAdded:Wait()
+
+-- Получаем HumanoidRootPart персонажа
+humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+
+-- Сохраняем текущее положение (CFrame) игрока в переменную
+savedCFrame = humanoidRootPart.CFrame
+while ZZZValue do
+    humanoidRootPart.CFrame = savedCFrame
+    game:GetService("ReplicatedStorage").ZZZZZZZSleep:FireServer()
+	for _, object in ipairs(workspace:GetDescendants()) do
+    -- Если это частицы или эффекты, то удаляем
+    if object:IsA("ParticleEmitter") or object:IsA("Trail") or 
+       object:IsA("Smoke") or object:IsA("Fire") or 
+       object:IsA("Sparkles") or object:IsA("Beam") then
+        object:Destroy()  -- Удаляем эффект
+    end
+end
+    task.wait()
+end
+	end    
+})
+
+Tab5:AddToggle({
+	Name = "Взрыв сервера с ZZZ",
+	Default = false,
+	Callback = function(Value)
+		ZZZValue = Value
+		players = game:GetService("Players")
+localPlayer = players.LocalPlayer  -- Получаем LocalPlayer
+workspace = game:GetService("Workspace")
+-- Ждем, пока персонаж игрока загрузится
+character = localPlayer.Character or localPlayer.CharacterAdded:Wait()
+
+-- Получаем HumanoidRootPart персонажа
+humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+
+-- Сохраняем текущее положение (CFrame) игрока в переменную
+savedCFrame = humanoidRootPart.CFrame
+while ZZZValue do
+    humanoidRootPart.CFrame = savedCFrame
+    game:GetService("ReplicatedStorage").ZZZZZZZSleep:FireServer()
+	for _, object in ipairs(workspace:GetDescendants()) do
+    -- Если это частицы или эффекты, то удаляем
+    if object:IsA("ParticleEmitter") or object:IsA("Trail") or 
+       object:IsA("Smoke") or object:IsA("Fire") or 
+       object:IsA("Sparkles") or object:IsA("Beam") then
+        object:Destroy()  -- Удаляем эффект
+    end
+end
+    task.wait()
+end
+	end    
+})
+
+Tab5:AddToggle({
+	Name = "Взрыв сервера с ZZZ",
+	Default = false,
+	Callback = function(Value)
+		ZZZValue = Value
+		players = game:GetService("Players")
+localPlayer = players.LocalPlayer  -- Получаем LocalPlayer
+workspace = game:GetService("Workspace")
+-- Ждем, пока персонаж игрока загрузится
+character = localPlayer.Character or localPlayer.CharacterAdded:Wait()
+
+-- Получаем HumanoidRootPart персонажа
+humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+
+-- Сохраняем текущее положение (CFrame) игрока в переменную
+savedCFrame = humanoidRootPart.CFrame
+while ZZZValue do
+    humanoidRootPart.CFrame = savedCFrame
+    game:GetService("ReplicatedStorage").ZZZZZZZSleep:FireServer()
+	for _, object in ipairs(workspace:GetDescendants()) do
+    -- Если это частицы или эффекты, то удаляем
+    if object:IsA("ParticleEmitter") or object:IsA("Trail") or 
+       object:IsA("Smoke") or object:IsA("Fire") or 
+       object:IsA("Sparkles") or object:IsA("Beam") then
+        object:Destroy()  -- Удаляем эффект
+    end
+end
+    task.wait()
+end
+	end    
+})
+
 Tab:AddLabel("Самый топовый скрипт!")
 Tab:AddParagraph("Разрушительная мощь!💀","Это капец какой то! С этим скриптом вы король сервера после того как включите КОСУ!😈😈😈🤫🧏‍♂️")
