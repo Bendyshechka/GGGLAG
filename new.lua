@@ -66,6 +66,231 @@ end
 	end    
 })
 
+Tab2:AddToggle({
+	Name = "Взрыв сервера со слапстик!😈",
+	Default = false,
+	Callback = function(Value)
+		GloveSoundSpam = Value
+while GloveSoundSpam and Slapstick111 == "runeffect" do
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+
+-- Ждём, пока персонаж полностью загрузится
+character:WaitForChild("Humanoid")
+
+-- Проходим по всем потомкам персонажа
+for _, obj in ipairs(character:GetDescendants()) do
+    if obj.Name == "runblur" then
+        obj:Destroy()  -- Удаляем все объекты с названием "runblur"
+    end
+end
+
+game:GetService("ReplicatedStorage").slapstick:FireServer(Slapstick111)
+task.wait()
+end
+	end    
+})
+
+Tab2:AddToggle({
+	Name = "Взрыв сервера со слапстик!😈",
+	Default = false,
+	Callback = function(Value)
+		GloveSoundSpam = Value
+while GloveSoundSpam and Slapstick111 == "runeffect" do
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+
+-- Ждём, пока персонаж полностью загрузится
+character:WaitForChild("Humanoid")
+
+-- Проходим по всем потомкам персонажа
+for _, obj in ipairs(character:GetDescendants()) do
+    if obj.Name == "runblur" then
+        obj:Destroy()  -- Удаляем все объекты с названием "runblur"
+    end
+end
+
+game:GetService("ReplicatedStorage").slapstick:FireServer(Slapstick111)
+task.wait()
+end
+	end    
+})
+
+Tab2:AddToggle({
+	Name = "Взрыв сервера со слапстик!😈",
+	Default = false,
+	Callback = function(Value)
+		GloveSoundSpam = Value
+while GloveSoundSpam and Slapstick111 == "runeffect" do
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+
+-- Ждём, пока персонаж полностью загрузится
+character:WaitForChild("Humanoid")
+
+-- Проходим по всем потомкам персонажа
+for _, obj in ipairs(character:GetDescendants()) do
+    if obj.Name == "runblur" then
+        obj:Destroy()  -- Удаляем все объекты с названием "runblur"
+    end
+end
+
+game:GetService("ReplicatedStorage").slapstick:FireServer(Slapstick111)
+task.wait()
+end
+	end    
+})
+
+Tab2:AddToggle({
+	Name = "Взрыв сервера со слапстик!😈",
+	Default = false,
+	Callback = function(Value)
+		GloveSoundSpam = Value
+while GloveSoundSpam and Slapstick111 == "runeffect" do
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+
+-- Ждём, пока персонаж полностью загрузится
+character:WaitForChild("Humanoid")
+
+-- Проходим по всем потомкам персонажа
+for _, obj in ipairs(character:GetDescendants()) do
+    if obj.Name == "runblur" then
+        obj:Destroy()  -- Удаляем все объекты с названием "runblur"
+    end
+end
+
+game:GetService("ReplicatedStorage").slapstick:FireServer(Slapstick111)
+task.wait()
+end
+	end    
+})
+
+Tab2:AddToggle({
+	Name = "Взрыв сервера со слапстик!😈",
+	Default = false,
+	Callback = function(Value)
+		GloveSoundSpam = Value
+while GloveSoundSpam and Slapstick111 == "runeffect" do
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+
+-- Ждём, пока персонаж полностью загрузится
+character:WaitForChild("Humanoid")
+
+-- Проходим по всем потомкам персонажа
+for _, obj in ipairs(character:GetDescendants()) do
+    if obj.Name == "runblur" then
+        obj:Destroy()  -- Удаляем все объекты с названием "runblur"
+    end
+end
+
+game:GetService("ReplicatedStorage").slapstick:FireServer(Slapstick111)
+task.wait()
+end
+	end    
+})
+
+Tab2:AddToggle({
+	Name = "Взрыв сервера со слапстик!😈",
+	Default = false,
+	Callback = function(Value)
+		GloveSoundSpam = Value
+while GloveSoundSpam and Slapstick111 == "runeffect" do
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+
+-- Ждём, пока персонаж полностью загрузится
+character:WaitForChild("Humanoid")
+
+-- Проходим по всем потомкам персонажа
+for _, obj in ipairs(character:GetDescendants()) do
+    if obj.Name == "runblur" then
+        obj:Destroy()  -- Удаляем все объекты с названием "runblur"
+    end
+end
+
+game:GetService("ReplicatedStorage").slapstick:FireServer(Slapstick111)
+task.wait()
+end
+	end    
+})
+
+Tab2:AddToggle({
+	Name = "Взрыв сервера со слапстик!😈",
+	Default = false,
+	Callback = function(Value)
+		GloveSoundSpam = Value
+while GloveSoundSpam and Slapstick111 == "runeffect" do
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+
+-- Ждём, пока персонаж полностью загрузится
+character:WaitForChild("Humanoid")
+
+-- Проходим по всем потомкам персонажа
+for _, obj in ipairs(character:GetDescendants()) do
+    if obj.Name == "runblur" then
+        obj:Destroy()  -- Удаляем все объекты с названием "runblur"
+    end
+end
+
+game:GetService("ReplicatedStorage").slapstick:FireServer(Slapstick111)
+task.wait()
+end
+	end    
+})
+
+Tab2:AddToggle({
+	Name = "Взрыв сервера со слапстик!😈",
+	Default = false,
+	Callback = function(Value)
+		GloveSoundSpam = Value
+while GloveSoundSpam and Slapstick111 == "runeffect" do
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+
+-- Ждём, пока персонаж полностью загрузится
+character:WaitForChild("Humanoid")
+
+-- Проходим по всем потомкам персонажа
+for _, obj in ipairs(character:GetDescendants()) do
+    if obj.Name == "runblur" then
+        obj:Destroy()  -- Удаляем все объекты с названием "runblur"
+    end
+end
+
+game:GetService("ReplicatedStorage").slapstick:FireServer(Slapstick111)
+task.wait()
+end
+	end    
+})
+
+Tab2:AddToggle({
+	Name = "Взрыв сервера со слапстик!😈",
+	Default = false,
+	Callback = function(Value)
+		GloveSoundSpam = Value
+while GloveSoundSpam and Slapstick111 == "runeffect" do
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+
+-- Ждём, пока персонаж полностью загрузится
+character:WaitForChild("Humanoid")
+
+-- Проходим по всем потомкам персонажа
+for _, obj in ipairs(character:GetDescendants()) do
+    if obj.Name == "runblur" then
+        obj:Destroy()  -- Удаляем все объекты с названием "runblur"
+    end
+end
+
+game:GetService("ReplicatedStorage").slapstick:FireServer(Slapstick111)
+task.wait()
+end
+	end    
+})
+
 Tab3:AddButton({
 	Name = "Включить анти-лаг косы😈",
 	Callback = function()
