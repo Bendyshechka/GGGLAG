@@ -33,7 +33,7 @@ local Tab4 = Window:MakeTab({
 
 local Tab5 = Window:MakeTab({
 	Name = "💤💤💤",
-	Icon = "rbxassetid://7734053426",
+	Icon = "rbxassetid://7733917120",
 	PremiumOnly = false
 })
 
