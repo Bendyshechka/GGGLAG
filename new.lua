@@ -31,6 +31,12 @@ local Tab4 = Window:MakeTab({
 	PremiumOnly = false
 })
 
+local Tab5 = Window:MakeTab({
+	Name = "Проп🐽",
+	Icon = "rbxassetid://7733917120",
+	PremiumOnly = false
+})
+
 Tab1:AddButton({
 	Name = "Флай💩",
 	Callback = function()
@@ -67,27 +73,38 @@ Tab2:AddToggle({
 	Default = false,
 	Callback = function(Value)
 		GloveSoundSpam = Value
-while GloveSoundSpam do
-for i = 1, Volna do
-    local player = game.Players.LocalPlayer
-local character = player.Character or player.CharacterAdded:Wait()
 
--- Ждём, пока персонаж полностью загрузится
-character:WaitForChild("Humanoid")
+		if GloveSoundSpam then
+			-- Запускаем столько корутин, сколько указано в Volna
+			for i = 1, Volna do
+				coroutine.wrap(function()
+					while GloveSoundSpam do
+						local player = game.Players.LocalPlayer
+						local character = player.Character or player.CharacterAdded:Wait()
 
--- Проходим по всем потомкам персонажа
-for _, obj in ipairs(character:GetDescendants()) do
-    if obj.Name == "runblur" then
-        obj:Destroy()  -- Удаляем все объекты с названием "runblur"
-    end
-end
+						-- Ждём, пока персонаж полностью загрузится
+						character:WaitForChild("Humanoid")
 
-game:GetService("ReplicatedStorage").slapstick:FireServer(Slapstick111)
-task.wait()
-end
-end
+						-- Проходим по всем потомкам персонажа
+						for _, obj in ipairs(character:GetDescendants()) do
+							if obj.Name == "runblur" then
+								obj:Destroy()  -- Удаляем все объекты с названием "runblur"
+							end
+						end
+
+						-- Вызываем событие на сервере для "slapstick"
+						game:GetService("ReplicatedStorage").slapstick:FireServer(Slapstick111)
+
+						-- Небольшая задержка перед следующей итерацией
+						task.wait()  -- Настройка задержки
+					end
+				end)()
+			end
+		end
 	end    
 })
+
+Tab2:AddLabel("На 200 не лагает, но пинг до 20к летит!")
 
 Tab3:AddButton({
 	Name = "Включить анти-лаг косы только у себя😈",
@@ -141,16 +158,25 @@ Tab3:AddToggle({
 	Default = false,
 	Callback = function(Value)
 		GloveSoundSpam = Value
-while GloveSoundSpam do
-for i = 1, Volna do
-	while GloveSoundSpam do
-    game:GetService("ReplicatedStorage").Scythe:FireServer("ScytheWeapon")
-	task.wait()
+
+		if GloveSoundSpam then
+			-- Запускаем столько корутин, сколько указано в Volna
+			for i = 1, Volna do
+				coroutine.wrap(function()
+					while GloveSoundSpam do
+						-- Вызываем событие на сервере для "ScytheWeapon"
+						game:GetService("ReplicatedStorage").Scythe:FireServer("ScytheWeapon")
+
+						-- Небольшая задержка перед следующей итерацией
+						task.wait()  -- Задержку можно настроить
 					end
-end
-end
+				end)()
+			end
+		end
 	end    
 })
+
+Tab3:AddLabel("На 5 нахуй всё зависает!")
 
 Tab1:AddButton({
 	Name = "Невидимость😶‍🌫️",
@@ -206,28 +232,99 @@ Tab4:AddTextbox({
 	Default = 1,
 	TextDisappear = false,
 	Callback = function(Value)
-		Volna = Value
+		VolnaDive = Value
 	end	  
 })
 
 Tab4:AddToggle({
-	Name = "Взрыв сервера с Дайф бомб💥💥💥",
+	Name = "Взрыв сервера с Дайв бомб💥💥💥",
 	Default = false,
 	Callback = function(Value)
 		DiveSpam = Value
-while DiveSpam do
-for i = 1, Volna do
-    DivebombExplosion = game.Players.LocalPlayer.Name
 
-while DiveSpam do
-game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["chargeAlpha"] = 99.7833333881571889,["rocketJump"] = true})
-game:GetService("ReplicatedStorage").RocketJump:InvokeServer({["position"] = game.Players[DivebombExplosion].Character.HumanoidRootPart.Position,["explosion"] = true,["explosionAlpha"] = 1000})
-wait(0.00000001)
-end
-end
-end
+		if DiveSpam then
+			-- Запускаем столько корутин, сколько указано в VolnaDive
+			for i = 1, VolnaDive do
+				coroutine.wrap(function()
+					while DiveSpam do
+						-- Получаем имя игрока для определения позиции взрыва
+						local DivebombExplosion = game.Players.LocalPlayer.Name
+
+						-- Первый вызов RocketJump с параметром chargeAlpha
+						game:GetService("ReplicatedStorage").RocketJump:InvokeServer({
+							["chargeAlpha"] = 99.7833333881571889,
+							["rocketJump"] = true
+						})
+
+						-- Второй вызов RocketJump с параметрами для взрыва
+						game:GetService("ReplicatedStorage").RocketJump:InvokeServer({
+							["position"] = game.Players[DivebombExplosion].Character.HumanoidRootPart.Position,
+							["explosion"] = true,
+							["explosionAlpha"] = 1000
+						})
+
+						-- Задержка перед следующей итерацией
+						task.wait()  -- Задержка между вызовами (настройте по необходимости)
+					end
+				end)()
+			end
+		end
 	end    
 })
+
+Tab4:AddLabel("На 10 уже лагает!")
+
+Tab5:AddToggle({
+	Name = "Включить анти-лаг у всех(у тебя тоже)",
+	Default = false,
+	Callback = function(Value)
+		PropLagVal = Value
+while PropLagVal do
+for _, player in pairs(players:GetPlayers()) do
+    local playerScripts = player:FindFirstChild("PlayerScripts")
+    if playerScripts then
+        local vfxListener = playerScripts:FindFirstChild("VFXListener")
+        if vfxListener then
+            local prop = vfxListener:FindFirstChild("prop")
+			prop:Destroy()
+		end
+	end
+end
+			end
+	end    
+})
+
+Tab5:AddTextbox({
+	Name = "Своя волна😈😈😈:",
+	Default = 1,
+	TextDisappear = false,
+	Callback = function(Value)
+		VolnaProp = Value
+	end	  
+})
+
+Tab5:AddToggle({
+	Name = "Взрыв сервера с Проп🐽🐽🐽",
+	Default = false,
+	Callback = function(Value)
+		propSpam = Value
+
+		if propSpam then
+			-- Запускаем столько корутин, сколько указано в VolnaProp
+			for i = 1, VolnaProp do
+				coroutine.wrap(function()
+					while propSpam do
+						-- Вызываем событие
+						game:GetService("ReplicatedStorage").Prop:FireServer()
+						task.wait()  -- Задержка между вызовами
+					end
+				end)()
+			end
+		end
+	end    
+})
+
+Tab5:AddLabel("На 20 уже лагает!")
 
 Tab:AddLabel("Самый топовый скрипт!")
 Tab:AddParagraph("Разрушительная мощь!💀","Это капец какой то! С этим скриптом вы король сервера после того как включите КОСУ!😈😈😈🤫🧏‍♂️")
