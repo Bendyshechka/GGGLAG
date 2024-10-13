@@ -287,6 +287,7 @@ for _, player in pairs(players:GetPlayers()) do
         if vfxListener then
             local prop = vfxListener:FindFirstChild("prop")
 			prop:Destroy()
+wait(0.000000000001)
 		end
 	end
 end
