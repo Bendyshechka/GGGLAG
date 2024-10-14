@@ -1,4 +1,4 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Bendyshechka/XenkaliScript/refs/heads/main/Library')))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Bendyshechka/GGGLAG/refs/heads/main/Library')))()
 local Window = OrionLib:MakeWindow({Name = "Slap battles ping crasher💀", HidePremium = false, SaveConfig = true, ConfigFolder = "Lag"})
 
 local Tab = Window:MakeTab({
@@ -33,6 +33,12 @@ local Tab4 = Window:MakeTab({
 
 local Tab5 = Window:MakeTab({
 	Name = "Проп🐽",
+	Icon = "rbxassetid://7733917120",
+	PremiumOnly = false
+})
+
+local Tab6 = Window:MakeTab({
+	Name = "Револьвер🔫🔫🔫",
 	Icon = "rbxassetid://7733917120",
 	PremiumOnly = false
 })
@@ -326,6 +332,59 @@ Tab5:AddToggle({
 })
 
 Tab5:AddLabel("На 20 уже лагает!")
+
+Tab6:AddToggle({
+	Name = "Включить анти-лаг у всех(у тебя тоже)",
+	Default = false,
+	Callback = function(Value)
+		PropLagVal = Value
+while PropLagVal do
+for _, player in pairs(players:GetPlayers()) do
+    local playerScripts = player:FindFirstChild("PlayerScripts")
+    if playerScripts then
+        local vfxListener = playerScripts:FindFirstChild("VFXListener")
+        if vfxListener then
+            local hitman = vfxListener:FindFirstChild("HitmanVFX")
+			hitman:Destroy()
+wait(0.000000000001)
+		end
+	end
+end
+			end
+	end    
+})
+
+Tab6:AddTextbox({
+	Name = "Своя волна😈😈😈:",
+	Default = 1,
+	TextDisappear = false,
+	Callback = function(Value)
+		VolnaHitman = Value
+	end	  
+})
+
+Tab6:AddToggle({
+	Name = "Взрыв сервера с Револьвером🔫🔫🔫",
+	Default = false,
+	Callback = function(Value)
+		HitmanSpam = Value
+
+		if HitmanSpam then
+			-- Запускаем столько корутин, сколько указано в VolnaProp
+			for i = 1, VolnaHitman do
+				coroutine.wrap(function()
+					while HitmanSpam do
+						-- Вызываем событие
+						game:GetService("ReplicatedStorage"):WaitForChild("HitmanAbility"):FireServer("ReplicateGoldenRevolver",{0})
+						task.wait()  -- Задержка между вызовами
+					end
+				end)()
+			end
+		end
+	end    
+})
+
+Tab6:AddLabel("На 10 уже лагает!")
 
 Tab:AddLabel("Самый топовый скрипт!")
 Tab:AddParagraph("Разрушительная мощь!💀","Это капец какой то! С этим скриптом вы король сервера после того как включите КОСУ!😈😈😈🤫🧏‍♂️")
