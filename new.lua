@@ -8,49 +8,65 @@ local Tab = Window:MakeTab({
 })
 
 local Tab1 = Window:MakeTab({
-	Name = "Вспомогательное😈",
+	Name = "Другие скрипты от меня👽",
 	Icon = "rbxassetid://8997387937",
 	PremiumOnly = false
 })
 
 local Tab2 = Window:MakeTab({
+	Name = "Вспомогательное😈",
+	Icon = "rbxassetid://8997387937",
+	PremiumOnly = false
+})
+
+local Tab3 = Window:MakeTab({
 	Name = "Слапстик💀",
 	Icon = "rbxassetid://7733917120",
 	PremiumOnly = false
 })
 
-local Tab3 = Window:MakeTab({
+local Tab4 = Window:MakeTab({
 	Name = "Коса💀",
 	Icon = "rbxassetid://7733917120",
 	PremiumOnly = false
 })
 
-local Tab4 = Window:MakeTab({
+local Tab5 = Window:MakeTab({
 	Name = "Дайф Бомб💥",
 	Icon = "rbxassetid://7733917120",
 	PremiumOnly = false
 })
 
-local Tab5 = Window:MakeTab({
+local Tab6 = Window:MakeTab({
 	Name = "Проп🐽",
 	Icon = "rbxassetid://7733917120",
 	PremiumOnly = false
 })
 
-local Tab6 = Window:MakeTab({
+local Tab7 = Window:MakeTab({
 	Name = "Револьвер🔫🔫🔫",
 	Icon = "rbxassetid://7733917120",
 	PremiumOnly = false
 })
 
+Tab:AddLabel("Самый топовый скрипт!")
+Tab:AddParagraph("Разрушительная мощь!💀","Это капец какой то! С этим скриптом вы король сервера после того как включите КОСУ!😈😈😈🤫🧏‍♂️")
+
 Tab1:AddButton({
+	Name = "Алхемист👽👽👽",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Bendyshechka/Alchemistthrow/refs/heads/main/alchemist.lua"))()
+  	end    
+})
+
+Tab2:AddButton({
 	Name = "Флай💩",
 	Callback = function()
       		loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\103\105\115\116\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\109\101\111\122\111\110\101\89\84\47\98\102\48\51\55\100\102\102\57\102\48\97\55\48\48\49\55\51\48\52\100\100\100\54\55\102\100\99\100\51\55\48\47\114\97\119\47\101\49\52\101\55\52\102\52\50\53\98\48\54\48\100\102\53\50\51\51\52\51\99\102\51\48\98\55\56\55\48\55\52\101\98\51\99\53\100\50\47\97\114\99\101\117\115\37\50\53\50\48\120\37\50\53\50\48\102\108\121\37\50\53\50\48\50\37\50\53\50\48\111\98\102\108\117\99\97\116\111\114\39\41\44\116\114\117\101\41\41\40\41\10\10")()
   	end    
 })
 
-Tab1:AddButton({
+Tab2:AddButton({
 	Name = "Телепорт в верх хантера😭",
 	Callback = function()
       		local players = game:GetService("Players")
@@ -65,7 +81,27 @@ humanoidRootPart.CFrame = CFrame.new(17902, -23, -3534)
   	end    
 })
 
-Tab2:AddTextbox({
+Tab2:AddButton({
+	Name = "Невидимость😶‍🌫️",
+	Callback = function()
+if game.Players.LocalPlayer.Character:FindFirstChild("entered") == nil and game.Players.LocalPlayer.leaderstats.Slaps.Value >= 666 then
+OGlove = game.Players.LocalPlayer.leaderstats.Glove.Value
+fireclickdetector(workspace.Lobby.Ghost.ClickDetector)
+game.ReplicatedStorage.Ghostinvisibilityactivated:FireServer()
+fireclickdetector(workspace.Lobby[OGlove].ClickDetector)
+task.wait(1)
+for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+if v.Name  ~= "Humanoid" then
+v.Transparency = 0
+end
+end
+else
+OrionLib:MakeNotification({Name = "Ошибка!",Content = "Ты должен быть в лобби и у тебя должно быть больше 666 шлепков",Image = "rbxassetid://7733658504",Time = 5})
+end
+  	end    
+})
+
+Tab3:AddTextbox({
 	Name = "Своя волна😈😈😈:",
 	Default = 1,
 	TextDisappear = false,
@@ -74,7 +110,7 @@ Tab2:AddTextbox({
 	end	  
 })
 
-Tab2:AddToggle({
+Tab3:AddToggle({
 	Name = "Взрыв сервера со слапстик!😈",
 	Default = false,
 	Callback = function(Value)
@@ -110,9 +146,9 @@ Tab2:AddToggle({
 	end    
 })
 
-Tab2:AddLabel("На 200 не лагает, но пинг до 20к летит!")
+Tab3:AddLabel("На 200 не лагает, но пинг до 20к летит!")
 
-Tab3:AddButton({
+Tab4:AddButton({
 	Name = "Включить анти-лаг косы только у себя😈",
 	Callback = function()
             local player = game.Players.LocalPlayer
@@ -128,7 +164,7 @@ end
   	end    
 })
 
-Tab3:AddButton({
+Tab4:AddButton({
 	Name = "Включить анти-лаг у всех😈😭",
 	Callback = function()
 		local players = game:GetService("Players")
@@ -150,7 +186,7 @@ Tab3:AddButton({
 	end    
 })
 
-Tab3:AddTextbox({
+Tab4:AddTextbox({
 	Name = "Своя волна😈😈😈:",
 	Default = 1,
 	TextDisappear = false,
@@ -159,7 +195,7 @@ Tab3:AddTextbox({
 	end	  
 })
 
-Tab3:AddToggle({
+Tab4:AddToggle({
 	Name = "Взрыв сервера с косой!",
 	Default = false,
 	Callback = function(Value)
@@ -182,29 +218,9 @@ Tab3:AddToggle({
 	end    
 })
 
-Tab3:AddLabel("На 5 нахуй всё зависает!")
+Tab4:AddLabel("На 5 нахуй всё зависает!")
 
-Tab1:AddButton({
-	Name = "Невидимость😶‍🌫️",
-	Callback = function()
-if game.Players.LocalPlayer.Character:FindFirstChild("entered") == nil and game.Players.LocalPlayer.leaderstats.Slaps.Value >= 666 then
-OGlove = game.Players.LocalPlayer.leaderstats.Glove.Value
-fireclickdetector(workspace.Lobby.Ghost.ClickDetector)
-game.ReplicatedStorage.Ghostinvisibilityactivated:FireServer()
-fireclickdetector(workspace.Lobby[OGlove].ClickDetector)
-task.wait(1)
-for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
-if v.Name  ~= "Humanoid" then
-v.Transparency = 0
-end
-end
-else
-OrionLib:MakeNotification({Name = "Ошибка!",Content = "Ты должен быть в лобби и у тебя должно быть больше 666 шлепков",Image = "rbxassetid://7733658504",Time = 5})
-end
-  	end    
-})
-
-Tab4:AddToggle({
+Tab5:AddToggle({
 	Name = "Включить анти-лаг у всех",
 	Default = false,
 	Callback = function(Value)
@@ -233,7 +249,8 @@ while DiveLagValue do
 end
 	end    
 })
-Tab4:AddTextbox({
+
+Tab5:AddTextbox({
 	Name = "Своя волна😈😈😈:",
 	Default = 1,
 	TextDisappear = false,
@@ -242,7 +259,7 @@ Tab4:AddTextbox({
 	end	  
 })
 
-Tab4:AddToggle({
+Tab5:AddToggle({
 	Name = "Взрыв сервера с Дайв бомб💥💥💥",
 	Default = false,
 	Callback = function(Value)
@@ -278,9 +295,9 @@ Tab4:AddToggle({
 	end    
 })
 
-Tab4:AddLabel("На 10 уже лагает!")
+Tab5:AddLabel("На 10 уже лагает!")
 
-Tab5:AddToggle({
+Tab6:AddToggle({
 	Name = "Включить анти-лаг у всех(у тебя тоже)",
 	Default = false,
 	Callback = function(Value)
@@ -301,7 +318,7 @@ end
 	end    
 })
 
-Tab5:AddTextbox({
+Tab6:AddTextbox({
 	Name = "Своя волна😈😈😈:",
 	Default = 1,
 	TextDisappear = false,
@@ -310,7 +327,7 @@ Tab5:AddTextbox({
 	end	  
 })
 
-Tab5:AddToggle({
+Tab6:AddToggle({
 	Name = "Взрыв сервера с Проп🐽🐽🐽",
 	Default = false,
 	Callback = function(Value)
@@ -331,9 +348,9 @@ Tab5:AddToggle({
 	end    
 })
 
-Tab5:AddLabel("На 20 уже лагает!")
+Tab6:AddLabel("На 20 уже лагает!")
 
-Tab6:AddToggle({
+Tab7:AddToggle({
 	Name = "Включить анти-лаг у всех(у тебя тоже)",
 	Default = false,
 	Callback = function(Value)
@@ -354,7 +371,7 @@ end
 	end    
 })
 
-Tab6:AddTextbox({
+Tab7:AddTextbox({
 	Name = "Своя волна😈😈😈:",
 	Default = 1,
 	TextDisappear = false,
@@ -363,7 +380,7 @@ Tab6:AddTextbox({
 	end	  
 })
 
-Tab6:AddToggle({
+Tab7:AddToggle({
 	Name = "Взрыв сервера с Револьвером🔫🔫🔫",
 	Default = false,
 	Callback = function(Value)
@@ -384,7 +401,4 @@ Tab6:AddToggle({
 	end    
 })
 
-Tab6:AddLabel("На 10 уже лагает!")
-
-Tab:AddLabel("Самый топовый скрипт!")
-Tab:AddParagraph("Разрушительная мощь!💀","Это капец какой то! С этим скриптом вы король сервера после того как включите КОСУ!😈😈😈🤫🧏‍♂️")
+Tab7:AddLabel("На 10 уже лагает!")
