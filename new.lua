@@ -408,3 +408,34 @@ Tab7:AddToggle({
 })
 
 Tab7:AddLabel("На 10 уже лагает!")
+
+Tab8:AddTextbox({
+	Name = "Своя волна😈😈😈:",
+	Default = 1,
+	TextDisappear = false,
+	Callback = function(Value)
+		VolnaQuake = Value
+	end	  
+})
+
+Tab8:AddToggle({
+	Name = "Взрыв сервера с Револьвером🔫🔫🔫",
+	Default = false,
+	Callback = function(Value)
+		QuakeSpam = Value
+
+		if QuakeSpam then
+			-- Запускаем столько корутин, сколько указано в VolnaProp
+			for i = 1, VolnaQuake do
+				coroutine.wrap(function()
+					while QuakeSpam do
+						-- Вызываем событие
+						game:GetService("ReplicatedStorage"):WaitForChild("QuakeQuake"):FireServer({["start"] = true})
+game:GetService("ReplicatedStorage"):WaitForChild("QuakeQuake"):FireServer({["finished"] = true})
+						task.wait()  -- Задержка между вызовами
+					end
+				end)()
+			end
+		end
+	end    
+})
