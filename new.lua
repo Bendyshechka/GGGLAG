@@ -154,43 +154,94 @@ Tab3:AddToggle({
 
 Tab3:AddLabel("На 200 не лагает, но пинг до 20к летит!")
 
-Tab4:AddButton({
-	Name = "Включить анти-лаг косы только у себя😈",
-	Callback = function()
-            local player = game.Players.LocalPlayer
-local character = workspace:FindFirstChild(player.Name)  -- Находим персонажа локального игрока в Workspace
+Tab4:AddToggle({
+	Name = "Включить анти=лаг только у себя😈😈😈",
+	Default = false,
+	Callback = function(Value)
+		local player = game.Players.LocalPlayer
+		local character = workspace:FindFirstChild(player.Name)  -- Находим персонажа локального игрока
 
-if character then
-    local rightArm = character:FindFirstChild("Right Arm")
-    if rightArm then
-        rightArm:Destroy()  -- Удаляем объект "Right Arm"
-    end
-end
-
-  	end    
-})
-
-Tab4:AddButton({
-	Name = "Включить анти-лаг у всех😈😭",
-	Callback = function()
-		local players = game:GetService("Players")
-		local localPlayer = players.LocalPlayer  -- Получаем LocalPlayer
-		
-		for _, player in ipairs(players:GetPlayers()) do
-			-- Пропускаем LocalPlayer
-			if player ~= localPlayer then
-				local character = player.Character or workspace:FindFirstChild(player.Name)
-				if character then
-					-- Проверяем и удаляем части рук для R6 и R15
-					local rightArm = character:FindFirstChild("Right Arm") or character:FindFirstChild("RightHand")
-					if rightArm then
-						rightArm:Destroy()  -- Удаляем часть тела на стороне сервера
-					end
+		-- Функция для удаления правой руки у локального игрока
+		local function removeRightArm()
+			if character and character:FindFirstChild("Humanoid") and character.Humanoid.Health > 0 then
+				local rightArm = character:FindFirstChild("Right Arm") or character:FindFirstChild("RightHand")
+				if rightArm then
+					rightArm:Destroy()  -- Удаляем часть тела
 				end
 			end
 		end
+
+		-- Цикл для удаления правой руки, пока включен переключатель
+		while Value do
+			-- Обновляем персонажа в случае его смены (например, после возрождения)
+			if player.Character ~= character then
+				character = player.Character
+			end
+
+			-- Выполняем удаление правой руки
+			removeRightArm()
+			task.wait(0.001)  -- Задержка перед повторением
+		end
+
+		-- Следим за возрождением персонажа после смерти
+		player.CharacterAdded:Connect(function()
+			while Value do
+				-- После возрождения продолжаем выполнять цикл
+				character = player.Character  -- Обновляем ссылку на нового персонажа
+				removeRightArm()  -- Удаляем правую руку
+				task.wait(0.001)  -- Задержка перед повторением
+			end
+		end)
 	end    
 })
+
+
+
+Tab4:AddToggle({
+	Name = "Включить анти-лаг у всех😈😭",
+	Default = false,
+	Callback = function(Value)
+		local players = game:GetService("Players")
+		local localPlayer = players.LocalPlayer  -- Получаем LocalPlayer
+
+		-- Функция для удаления правой руки у игрока
+		local function removeRightArm(player)
+			local character = player.Character or workspace:FindFirstChild(player.Name)
+			if character and character:FindFirstChild("Humanoid") and character.Humanoid.Health > 0 then
+				local rightArm = character:FindFirstChild("Right Arm") or character:FindFirstChild("RightHand")
+				if rightArm then
+					rightArm:Destroy()  -- Удаляем часть тела
+				end
+			end
+		end
+
+		-- Цикл для удаления правой руки для всех игроков, кроме локального игрока
+		while Value do
+			for _, player in ipairs(players:GetPlayers()) do
+				-- Пропускаем локального игрока
+				if player ~= localPlayer then
+					removeRightArm(player)
+				end
+			end
+			task.wait(0.001)  -- Задержка перед повторением
+		end
+
+		-- Следим за возрождением персонажей всех игроков после смерти, кроме себя
+		players.PlayerAdded:Connect(function(player)
+			player.CharacterAdded:Connect(function()
+				while Value do
+					-- Пропускаем локального игрока
+					if player ~= localPlayer then
+						removeRightArm(player)  -- Удаляем правую руку для нового персонажа
+					end
+					task.wait(0.001)  -- Задержка перед повторением
+				end
+			end)
+		end)
+	end    
+})
+
+
 
 Tab4:AddTextbox({
 	Name = "Своя волна😈😈😈:",
