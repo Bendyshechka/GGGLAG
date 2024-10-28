@@ -77,25 +77,30 @@ end
   	end    
 })
 
+local players = game:GetService("Players")
+
 Tab7:AddToggle({
-	Name = "Включить анти-лаг у всех(у тебя тоже)",
-	Default = false,
-	Callback = function(Value)
-		PropLagVal = Value
-while PropLagVal do
-for _, player in pairs(players:GetPlayers()) do
-    local playerScripts = player:FindFirstChild("PlayerScripts")
-    if playerScripts then
-        local vfxListener = playerScripts:FindFirstChild("VFXListener")
-        if vfxListener then
-            local hitman = vfxListener:FindFirstChild("HitmanVFX")
-			hitman:Destroy()
-wait(0.000000000001)
-		end
-	end
-end
-			end
-	end    
+    Name = "Включить анти-лаг у всех(у тебя тоже)",
+    Default = false,
+    Callback = function(Value)
+        PropLagVal = Value
+        -- Запуск цикла удаления, пока PropLagVal == true
+        while PropLagVal do
+            for _, player in pairs(players:GetPlayers()) do
+                local playerScripts = player:FindFirstChild("PlayerScripts")
+                if playerScripts then
+                    local vfxListener = playerScripts:FindFirstChild("VFXListener")
+                    if vfxListener then
+                        local hitman = vfxListener:FindFirstChild("HitmanVFX")
+                        if hitman then
+                            hitman:Destroy()
+                        end
+                    end
+                end
+            end
+            wait(0.1)  -- Задержка для уменьшения нагрузки
+        end
+    end
 })
 
 Tab7:AddTextbox({
